@@ -1,0 +1,257 @@
+@import 'libs/slick';
+@import 'libs/branches';
+@import 'libs/tagline';
+@import 'libs/subscription';
+@import 'libs/medical-center-page';
+@import 'libs/sign-up-now';
+
+.route{
+    .title{
+        h2{
+            font-size: 24px;
+            line-height: 28px;
+            color: #000;
+            margin: 25px 0;
+        }
+    }
+    .search{
+        margin: 20px 0;
+
+        form{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            button{
+                margin-right: -25px;
+                opacity: 0.3;
+                width: 25px;
+                height: 25px;
+                border: none;
+                color: #313C42;
+                background: transparent;
+                i{
+                    font-size: 19px;
+                }
+            }
+            input{
+                width: 100%;
+                height: 38px;
+                border: none;
+                border-bottom: 1px solid #E3E8EA;
+                font-size: 14px;
+                font-weight: 300;
+                color: #0F1728;
+                line-height: 20px;
+                background: transparent;
+                font-family: 'GT Eesti Pro Display Light';
+                padding: 0 7px 5px 38px;
+                margin-top: 3px;
+            }
+            input::placeholder{
+                opacity: 0.2;
+            }
+        }
+    }
+    .tabs{
+        display: flex;
+        overflow: scroll;
+        margin-right: -15px;
+        white-space: nowrap;
+        margin-bottom: 12px;
+        padding-right: 15px;
+        li{
+            margin-right: 41px;
+            &:last-child{
+                margin-right: 0;
+                padding-right: 15px;
+            }
+            a{
+                font-size: 14px;
+                color: #293842;
+                line-height: 20px;
+                position: relative;
+                padding-bottom: 5px;
+                display: inline-block;
+                font-family: 'GT Eesti Pro Display Regular';
+                &:hover{
+                    color: #00B6EF;
+                }
+                &::after{
+                    content: '';
+                    left: 0;
+                    width: 0;
+                    bottom: 0;
+                    height: 2px;
+                    position: absolute;
+                    background: #00B6EF;
+                    transition: all 0.4s;
+                }
+            }
+        }
+        li.active{
+            a{
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .tab{
+        display: none;
+        h3{
+            font-size: 18px;
+            line-height: 21px;
+            color: #000;
+            margin-top: 20px;
+        }
+        .items{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0 40px;
+            a{
+                width: 100%;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000;
+                padding: 20px 0 20px 17px;
+                border: 1px solid #E5E9EA;
+                margin-top: -1px;
+            }
+        }
+    }
+    @media(min-width: 1024px){
+        .tab{
+            .items{
+                display: flex;
+                a{
+                    width: 50%;
+                    margin-right: -1px;
+                }
+            }
+        }
+    }
+    @media(min-width: 1200px){
+        .tabs {
+            margin-bottom: 0;
+            li {
+                a {
+                    font-size: 16px;
+                    line-height: 28px;
+                    padding-bottom: 0;
+                }
+            }
+        }
+        .filter{
+            .items{
+                display: flex;
+                a{
+                    width: 25%;
+                }
+            }
+        }
+        .tab{
+            .items{
+                a{
+                    width: 25%;
+                }
+            }
+        }
+    }
+    @media(min-width:1400px){
+        .tabs {
+            li {
+                margin-right: 40px;
+                a {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    @media(min-width:1600px){
+        .search{
+            form{
+                margin-bottom: 30px;
+                align-items: flex-start;
+                button{
+                    i{
+                        font-size: 22px;
+                    }
+                }
+                input{
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    @media(min-width:1800px){
+        .tabs {
+            li {
+                margin-right: 60px;
+                a {
+                    font-size: 22px;
+                    line-height: 44px;
+                }
+            }
+        }
+    }
+    .active-tab{
+        display: block;
+    }
+    .jsTitle{
+        display: none;
+    }
+}
+
+.tagline {
+    padding-bottom: 30px;
+    @media (min-width: 540px) {
+        padding-bottom: 40px;
+    }
+    @media (min-width: 768px){
+        padding-bottom: 50px;
+    }
+    @media (min-width: 1024px) {
+        padding-bottom: 60px;
+    }
+    @media (min-width: 1200px) {
+        padding-bottom: 70px;
+    }
+    @media (min-width: 1400px) {
+        padding-bottom: 80px;
+    }
+    @media (min-width: 1600px) {
+        padding-bottom: 90px;
+    }
+    @media (min-width: 1800px) {
+        padding-bottom: 104px;
+    }
+}
+
+.branches {
+    padding: 0 0 40px;
+    @media (min-width: 540px) {
+        padding: 0 0 50px;
+    }
+    @media (min-width: 768px){
+        padding: 0 0 60px;
+    }
+    @media (min-width: 1024px) {
+        padding: 0 0 70px;
+    }
+    @media (min-width: 1200px) {
+        padding: 0 0 80px;
+    }
+    @media (min-width: 1400px) {
+        padding: 0 0 90px;
+    }
+    @media (min-width: 1600px) {
+        padding: 0 0 100px;
+    }
+    @media (min-width: 1800px) {
+        padding: 0 0 120px;
+    }
+}
+

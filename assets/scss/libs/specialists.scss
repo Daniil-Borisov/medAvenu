@@ -1,0 +1,600 @@
+.specialists {
+    padding: 50px 0 25px;
+    .specialists-content{
+        margin-bottom: 49px;
+    }
+    .title{
+        margin-bottom: 28px;
+        h2{
+            margin-top: 0;
+            display: block;
+            font-size: 30px;
+            color: #000000;            
+            line-height: 35px;
+            font-weight: normal;
+            font-family: 'GT Eesti Pro Display Regular';
+        }
+    }
+    .text{
+        p{
+            font-size: 14px;
+            color: #3F3F3F;
+            line-height: 20px;
+            margin-bottom: 40px;
+        }
+        ul{
+            display: flex;
+            li{
+                margin-right: 28px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                i{
+                    display: block;
+                    font-size: 50px;
+                    color: #00B6EF;
+                    line-height: 50px;
+                    margin-bottom: 10px;
+                    font-family: 'GT Eesti Pro Display Regular';
+                }
+                span{
+                    display: block;
+                    font-size: 12px;
+                    color: #000000;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+    .specialists-slider{
+        padding-bottom: 80px;
+        margin: 0 15px 0 13px;
+        .slick-arrow{
+            left: 0;
+            bottom: 0;
+            width: 46px;
+            height: 46px;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 50%;
+            background: #FFFFFF;
+            border: 1px solid #E3E8EA;
+            transition: all 0.3s;
+            &:hover{
+                background: #2980B9;
+                border: 1px solid #2980B9;
+                i{
+                    color: #ffffff;
+                }
+            }
+            i{
+                top: 50%;
+                left: 50%;
+                font-size: 15px;
+                color: #2980B9;
+                position: absolute;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .slick-disabled{
+            opacity: 0.5;
+        }
+        .prev{
+            left: 0;
+        }
+        .next{
+            left: 56px;
+        }
+        .slick-slide{
+            border: 1px solid #E5E9EA;
+            transition: all 0.3s;
+            &:hover{
+                border: 1px solid #00B6EF;
+            }
+        }
+        .specialists-doctor{
+            position: relative;
+            padding: 16px 20px 15px 16px;
+            a{
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            .img{
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-block;
+                img{
+                    z-index: 0;
+                    width: 95px;
+                    height: 95px;
+                    display: flex;
+                    border-radius: 50%;
+                    position: relative;
+                }
+                .video-play{
+                    top: 4px;
+                    z-index: 1;
+                    right: -4px;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    position: absolute;
+                    background: #00B6EF;
+                    i{
+                        top: 50%;
+                        left: 52%;
+                        color: #fff;
+                        font-size: 10px;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+            h4{
+                font-size: 14px;
+                color: #293842;                
+                line-height: 16px;
+                margin-bottom: 6px;
+            }
+            .rating{
+                display: flex;
+                font-size: 10px;
+                color: #81939A;
+                font-weight: 300;
+                line-height: 12px;
+                align-items: center;
+                margin-bottom: 17px;
+                text-transform: lowercase;
+                i{
+                    font-size: 10px;
+                    color: #F9DA78;
+                    margin-right: 5px;
+                    display: inline-block;
+                }
+                a{
+                    opacity: 0.5;
+                    width: auto;
+                    height: auto;
+                    font-size: 10px;
+                    font-weight: 300;
+                    color: #81939A;
+                    margin-left: 8px;
+                    line-height: 12px;
+                    display: inline-block;
+                    position: static;
+                    text-transform: lowercase;
+                    transition: all 0.3s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+            p{
+                font-size: 12px;
+                color: #3F3F3F;
+                line-height: 14px;
+                text-transform: lowercase;
+            }
+        }
+    }
+    @media (min-width: 540px) {
+        .specialists-content {
+            margin-bottom: 48px;
+        }
+        .title {
+            margin-bottom: 25px;
+        }
+        .text {
+            p {
+                margin-bottom: 44px;
+            }
+            ul {
+                li {
+                    width: 25%;
+                    margin-right: 30px;
+                }
+            }
+        }
+        .specialists-slider{
+            margin: 0;
+            padding-bottom: 71px;
+            .slick-list{
+                padding-left: 40px;
+            }
+            .prev {
+                left: 41px;
+            }
+            .next {
+                left: 96px;
+            }
+            .specialists-doctor {
+                padding: 19px 18px 20px 19px;
+                .img {
+                    margin-bottom: 22px;
+                    img {
+                        width: 110px;
+                        height: 110px;
+                    }
+                    .video-play {
+                        right: -5px;
+                        width: 30px;
+                        height: 30px;
+                        i {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                h4{
+                    margin-bottom: 11px;
+                }
+                .rating {
+                    i {
+                        font-size: 12px;
+                    }
+                    a{
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 55px 0 35px;
+        .specialists-content {
+            margin-bottom: 56px;
+        }
+        .title {
+            width: 50%;
+        }
+        .text{
+            p {
+                margin-bottom: 35px;
+            }
+            ul {
+                li {
+                    width: auto;
+                    display: flex;
+                    margin-right: 20px;
+                    align-items: center;
+                    i {
+                        line-height: 48px;
+                        margin: 0 19px 0 0;
+                    }
+                }
+            }
+        }
+        .specialists-slider {
+            margin: 0;
+            padding-bottom: 0;
+            .slick-list{
+                padding-left: 192px;
+            }
+            .slick-arrow{
+                top: 48%;
+                z-index: 4;
+                bottom: initial;
+                transform: translate(0, -50%);
+            }
+            .next {
+                left: 172px;
+            }
+            .prev {
+                left: 115px;
+            }
+            .specialists-doctor{
+                padding: 20px 20px 25px 20px;
+                .img {
+                    margin-bottom: 22px;
+                    img {
+                        width: 116px;
+                        height: 116px;
+                    }
+                    .video-play{
+                        top: 5px;
+                    }
+                }
+                h4{
+                    margin-bottom: 13px;
+                }
+                .rating {
+                    i {
+                        font-size: 14px;
+                    }
+                    a {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 63px 0 35px;
+        .specialists-content{
+            display: flex;
+            margin-bottom: 79px;
+            justify-content: space-between;
+        }
+        .title {
+            width: 40%;
+            margin-bottom: 0;
+        }
+        .text{
+            width: 50%;
+            p {
+                margin-bottom: 39px;
+            }
+            ul{
+                li{
+                    width: 25%;
+                    margin-right: 34px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    i{
+                        margin: 0 0 10px;
+                    }
+                }
+            }
+        }
+        .specialists-slider {
+            .slick-list {
+                padding-left: 100px;
+            }
+            .slick-arrow{
+                top: 44%;
+            }
+            .prev {
+                left: 24px;
+            }
+            .next {
+                left: 80px;
+            }
+            .specialists-doctor{
+                padding: 24px 25px 23px 25px;
+                .img {
+                    margin-bottom: 27px;
+                    img{
+                        width: 136px;
+                        height: 136px;
+                    }
+                    .video-play {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+                h4 {
+                    margin-bottom: 14px;
+                }
+                .rating {
+                    margin-bottom: 14px;
+                    i {
+                        margin-right: 7px;
+                    }
+                    a {
+                        margin-left: 18px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 85px 0 43px;
+        .specialists-content {
+            margin-bottom: 94px;
+        }
+        .title{
+            h2 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+        .text {
+            margin-top: 10px;
+            p{
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 50px;
+            }
+            ul{
+                li{
+                    width: 23%;
+                    margin-right: 45px;
+                    i{
+                        font-size: 60px;
+                        line-height: 60px;
+                    }
+                    span{
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+        .specialists-slider{
+            .slick-arrow {
+                top: 50%;
+            }
+            .next {
+                left: 77px;
+            }
+            .prev {
+                left: 20px;
+            }
+            .specialists-doctor{
+                padding: 28px 28px 20px 29px;
+                .img{
+                    margin-bottom: 33px;
+                    img{
+                        width: 164px;
+                        height: 164px;
+                    }
+                    .video-play{
+                        top: 5px;
+                        right: -6px;
+                        width: 44px;
+                        height: 44px;
+                        i {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                h4{
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                .rating{
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 16px;
+                    i {
+                        font-size: 18px;
+                        margin-right: 7px;
+                    }
+                    a{
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin-left: 12px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        padding: 118px 0 80px;
+        .specialists-content {
+            margin-bottom: 110px;
+        }
+        .title {
+            margin-left: 8px;
+            h2 {
+                font-size: 60px;
+                line-height: 70px;
+            }
+        }
+        .text {
+            margin-top: 15px;
+            p {
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 70px;
+            }
+            ul{
+                li{
+                    width: 25%;
+                    margin-right: 63px;
+                    i{
+                        font-size: 100px;
+                        line-height: 100px;
+                    }
+                    span{
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+        .specialists-slider{
+            .slick-list {
+                padding-left: 62px;
+            }
+            .slick-arrow{
+                top: 48.5%;
+                width: 60px;
+                height: 60px;
+                i {
+                    font-size: 20px;
+                }
+            }
+            .next {
+                left: 102px;
+            }
+            .prev {
+                left: 28px;
+            }
+            .specialists-doctor{
+                padding: 50px 50px 50px 48px;
+                .img{
+                    margin-bottom: 38px;
+                    img{
+                        width: 188px;
+                        height: 188px;
+                    }
+                    .video-play{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                h4{
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+                .rating{
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-bottom: 24px;
+                    i {
+                        font-size: 19px;
+                        margin-right: 10px;
+                    }
+                    a{
+                        margin-left: 8px;
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1800px) {
+        padding: 145px 0 90px;
+        .specialists-content {
+            margin-bottom: 79px;
+        }
+        .title{
+            margin-left: 0;
+        }
+        .text {
+            margin-top: 33px;
+            ul {
+                li {
+                    width: 23%;
+                    margin-right: 115px;
+                }
+            }
+        }
+        .specialists-slider{
+            .slick-list {
+                padding-left: 130px;
+            }
+            .slick-arrow {
+                top: 45.5%;
+            }
+            .next {
+                left: 106px;
+            }
+            .prev {
+                left: 30px;
+            }
+            .specialists-doctor {
+                padding: 48px 50px 56px 50px;
+                .img{
+                    margin-bottom: 37px;
+                }
+                h4{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

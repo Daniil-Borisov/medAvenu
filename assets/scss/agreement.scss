@@ -1,0 +1,159 @@
+@import 'libs/subscription';
+
+.agreement{
+    padding: 10px 0 40px;
+    .title{
+        margin-bottom: 28px;
+        h1{
+            margin-top: 0;
+            display: block;
+            font-size: 30px;
+            color: #000000;            
+            line-height: 35px;
+            font-weight: normal;
+            font-family: 'GT Eesti Pro Display Regular';
+        }
+    }
+    .text{
+        p{
+            font-size: 14px;
+            color: #3F3F3F;
+            line-height: 20px;
+            padding-bottom: 30px;
+            &:last-of-type{
+                padding-bottom: 0;
+            }
+        }
+        a{
+            font-size: 14px;
+            color: #00B6EF;
+            line-height: 20px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .title{
+            h1 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+        .text{
+            p{
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+        }
+    }    
+    @media (min-width: 1600px) {
+        
+        .title{
+            margin-bottom: 62px;
+            h1 {
+                font-size: 60px;
+                line-height: 70px;
+            }
+        }
+        
+        .text {
+            margin-left: 3px;
+            p {
+                font-size: 22px;
+                line-height: 30px;
+                padding-bottom: 45px;
+                
+            }
+        }
+    }    
+}
+
+.content{
+    .content-title{
+        margin-bottom: 15px;
+        span{
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 400;
+            font-family: 'GT Eesti Pro Display Regular';
+            
+        }
+    }
+    .content-text{
+        display: flex;
+        span{
+            color: #00B6EF;
+            margin-right: 13px;
+        }
+        .text{
+            font-size: 14px;
+            color: #0F1728;
+            line-height: 20px;
+            p{
+                margin-bottom: 15px;
+            }
+            .wrapper{
+                span{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1400px) {
+        .content-title{
+            margin-bottom: 24px;
+            span{
+                font-size: 18px;
+                line-height: 25px;                
+            }
+        }
+        .content-text{
+            span{
+                font-size: 18px;
+                line-height: 25px;
+                margin-right: 21px;
+            }
+            .text{
+                
+                font-size: 18px;
+                line-height: 25px;
+                .wrapper{
+                    span{
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+    } 
+
+    @media (min-width: 1600px) {
+        .content-title{
+            margin-bottom: 24px;
+            span{
+                font-size: 22px;
+                line-height: 30px;               
+            }
+        }
+        .content-text{
+            span{
+                font-size: 22px;
+                line-height: 30px;
+                margin-right: 21px;
+            }
+            .text{
+                
+                font-size: 22px;
+                line-height: 30px;
+                .wrapper{
+                    span{
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

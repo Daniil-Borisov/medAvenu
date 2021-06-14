@@ -1,0 +1,448 @@
+.branches {
+    padding: 25px 0 20px;
+    .title{
+        margin-bottom: 30px;
+        h2{
+            display: block;
+            font-size: 30px;
+            color: #000000;            
+            line-height: 35px;
+            font-weight: normal;
+            font-family: 'GT Eesti Pro Display Regular';
+        }
+        .communication{
+            display: none;
+        }
+    }
+    .branches-content{
+        padding: 0 15px;
+        .slick-arrow{
+            left: 0;
+            bottom: 0;
+            width: 46px;
+            height: 46px;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 50%;
+            background: #FFFFFF;
+            border: 1px solid #E3E8EA;
+            transition: all 0.3s;
+            &:hover{
+                background: #2980B9;
+                border: 1px solid #2980B9;
+                i{
+                    color: #ffffff;
+                }
+            }
+            i{
+                top: 50%;
+                left: 50%;
+                font-size: 15px;
+                color: #2980B9;
+                position: absolute;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .slick-disabled{
+            opacity: 0.5;
+        }
+        .prev{
+            left: 0;
+        }
+        .next{
+            left: 56px;
+        }
+        .branches-item{
+            position: relative;
+            padding: 21px 0 20px 0;
+            border-top: 1px solid #E5E9EA;
+            transition: all 0.4s;
+            &:hover{
+                border-top: 1px solid #00B6EF;
+                &:last-child{
+                    border-bottom: 1px solid #00B6EF;
+                }
+            }
+            &:last-child{
+                border-bottom: 1px solid #E5E9EA;
+            }
+            a{
+                top: 0;
+                left: 0;
+                z-index: 3;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            h4{
+                font-size: 16px;
+                color: #000000;
+                line-height: 19px;
+                position: relative;
+                margin-right: 22px;
+                padding-right: 18px;
+                font-weight: normal;
+                font-family: 'GT Eesti Pro Display Regular';
+                i{
+                    top: 50%;
+                    right: 0;
+                    font-size: 20px;
+                    color: #00B6EF;
+                    position: absolute;
+                    transform: translate(0, -50%);
+                }
+            }
+            span{
+                display: none;
+            }
+            ul{
+                display: none;
+            }
+        }
+    }
+    @media (min-width: 540px) {
+        .title{
+            margin-bottom: 29px;
+        }
+        .branches-content{
+            padding: 0 42px;
+            .prev {
+                left: 41px;
+            }
+            .next {
+                left: 96px;
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 30px 0;
+        .title {
+            display: flex;
+            margin-bottom: 37px;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                width: 45%;
+            }
+            .communication{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                p{
+                    width: 44%;
+                    font-size: 10px;
+                    color: #81949A;
+                    line-height: 12px;
+                    position: relative;
+                    margin-right: 6px;
+                    padding-left: 25px;
+                    font-family: 'GT Eesti Pro Display Light';
+                    i{
+                        left: 0;
+                        top: 50%;
+                        font-size: 14px;
+                        color: #00B6EF;
+                        position: absolute;
+                        transform: translate(0, -50%);
+                    }
+                }
+                strong{
+                    font-size: 18px;
+                    color: #0F1728;
+                    line-height: 21px;
+                    display: inline-block;
+                    font-family: 'GT Eesti Pro Display Regular';
+                }
+            }
+        }
+        .branches-content{
+            padding: 0;
+            .slick-list{
+                padding-left: 192px;
+            }
+            .slick-arrow{
+                top: 48%;
+                z-index: 4;
+                bottom: initial;
+                transform: translate(0, -50%);
+            }
+            .next {
+                left: 172px;
+            }
+            .prev {
+                left: 115px;
+            }
+            .branches-item{
+                padding: 24px 18px 19px;
+                border: 1px solid #E5E9EA;
+                &:hover{
+                    border: 1px solid #00B6EF;
+                }
+                h4{
+                    margin-right: 0;
+                    padding-right: 0;
+                    margin-bottom: 5px;
+                    i{
+                        display: none;
+                    }
+                }
+                span{
+                    font-size: 14px;
+                    display: block;
+                    color: #81949A;
+                    font-weight: 300;
+                    line-height: 16px;
+                    margin-bottom: 27px;
+                    font-family: 'GT Eesti Pro Display Light';
+                }
+                ul{
+                    display: block;
+                    li{
+                        font-size: 14px;
+                        display: flex;
+                        color: #000000;
+                        line-height: 16px;
+                        align-items: center;
+                        font-weight: normal;
+                        margin-bottom: 13px;
+                        font-family: 'GT Eesti Pro Display Regular';
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        i{
+                            font-size: 16px;
+                            color: #00B6EF;
+                            margin-right: 12px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 29px 0 30px;
+        .title {
+            margin-bottom: 39px;
+            h2{
+                width: 35%;
+            }
+        }
+        .branches-content{
+            .slick-list {
+                padding-left: 100px;
+            }
+            .slick-arrow{
+                top: 50%;
+            }
+            .prev {
+                left: 22px;
+            }
+            .next {
+                left: 78px;
+            }
+            .branches-item {
+                padding: 30px 24px 22px;
+                h4 {
+                    margin-bottom: 8px;
+                }
+                span {
+                    margin-bottom: 30px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 20px;
+                        i {
+                            font-size: 20px;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 68px 0 30px;
+        .title {
+            margin-bottom: 58px;
+            h2 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+            .communication {
+                p {
+                    width: 40%;
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-right: 12px;
+                    padding-left: 30px;
+                    i {
+                        font-size: 18px;
+                    }
+                }
+                strong{
+                    font-size: 30px;
+                    line-height: 34px;
+                }
+            }
+        }
+        .branches-content{
+            .slick-arrow {
+                top: 50%;
+            }
+            .next {
+                left: 77px;
+            }
+            .prev {
+                left: 20px;
+            }
+            .branches-item {
+                padding: 31px 29px 36px;
+                h4{
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 10px;
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                ul{
+                    li{
+                        font-size: 18px;
+                        line-height: 21px;
+                        margin-bottom: 22px;
+                        i{
+                            font-size: 24px;
+                            margin-right: 18px;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        padding: 88px 0 60px;
+        .title {
+            margin-left: 4px;
+            margin-bottom: 56px;
+            h2 {
+                width: 40%;
+                font-size: 60px;
+                line-height: 70px;
+            }
+            .communication {
+                p {
+                    width: 41.5%;
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-right: 15px;
+                    padding-left: 50px;
+                    i {
+                        font-size: 24px;
+                    }
+                }
+                strong {
+                    font-size: 42px;
+                    line-height: 46px;
+                }
+            }
+        }
+        .branches-content{
+            .slick-list {
+                padding-left: 62px;
+            }
+            .slick-arrow{
+                top: 48.5%;
+                width: 60px;
+                height: 60px;
+                i {
+                    font-size: 20px;
+                }
+            }
+            .next {
+                left: 102px;
+            }
+            .prev {
+                left: 28px;
+            }
+            .branches-item {
+                padding: 48px 54px 45px;
+                border: 2px solid #e5e9ea;
+                &:hover{
+                    border: 2px solid #00B6EF;
+                    &:last-child {
+                        border-bottom: 2px solid #00B6EF;
+                    }
+                }
+                &:last-child {
+                    border-bottom: 2px solid #e5e9ea;
+                }
+                h4{
+                    font-size: 30px;
+                    line-height: 35px;
+                    margin-bottom: 17px;
+                }
+                span{
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-bottom: 35px;
+                }
+                ul{
+                    li{
+                        font-size: 18px;
+                        line-height: 21px;
+                        margin-bottom: 19px;
+                        i{
+                            font-size: 22px;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1800px) {
+        padding: 57px 0 60px;
+        .title {
+            margin-bottom: 72px;
+            .communication {
+                p {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .branches-content{
+            .slick-list {
+                padding-left: 130px;
+            }
+            .slick-arrow {
+                top: 50%;
+            }
+            .next {
+                left: 100px;
+            }
+            .prev {
+                left: 24px;
+            }
+            .branches-item{
+                padding: 52px 61px 55px;
+                h4 {
+                    margin-bottom: 23px;
+                }
+                span {
+                    margin-bottom: 42px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 23px;
+                        i {
+                            font-size: 26px;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

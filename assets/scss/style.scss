@@ -1,0 +1,204 @@
+@import "libs/button";
+@import "libs/header";
+@import "libs/footer";
+@import "libs/fonts";
+@import "libs/fontello";
+@import 'libs/normalize';
+
+body {
+    min-height: 100vh;
+    position: relative;
+    font-family: 'GT Eesti Pro Display Thin';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'GT Eesti Pro Display Light';
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+i{
+    font-style: normal;
+}
+
+ul li,
+ol li {
+    margin: 0;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea, 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clearfix {
+    &:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        clear: both;
+        height: 0;
+    }
+}
+
+input{
+    -webkit-appearance: none;   
+    appearance: none;   
+}
+
+a {
+    cursor: pointer;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    @media (min-width: 540px) {
+        padding: 0 40px;
+    }
+    @media (min-width: 1024px) {
+        padding: 0 192px;
+    }
+    @media (min-width: 1200px) {
+        padding: 0 100px;
+    }
+    @media (min-width: 1400px) {
+        padding: 0 100px;
+    }
+    @media (min-width: 1600px) {
+        padding: 0 60px;
+    }
+    @media (min-width: 1800px) {
+        padding: 0 130px;
+    }
+}
+
+.bread-crumbs {
+    padding: 23px 0 10px;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        li{
+            position: relative;
+            margin-right: 14px;
+            padding-right: 30px;
+            &::after{
+                content: '\e81a';
+                top: 50%;
+                right: 0;
+                color: #00B6EF;
+                font-size: 7px;
+                position: absolute;
+                font-family: 'fontello';
+                transform: translate(0, -50%);
+            }
+            &:last-child{
+                margin-right: 0;
+                padding-right: 0;
+                &::after{
+                    display: none;
+                }
+            }
+            a{
+                font-size: 12px;
+                color: #00B6EF;
+                line-height: 17px;
+                display: inline-block;
+                transition: all 0.3s;
+                &:hover{
+                    color: #2980B9;
+                }
+            }
+            span{
+                font-size: 12px;
+                color: #81939A;
+                line-height: 17px;
+                display: inline-block;
+            }
+        }
+    }
+    @media (min-width: 540px) {
+        padding: 26px 0 14px;
+    }
+    @media (min-width: 1024px) {
+        padding: 30px 0 16px;
+        ul {
+            li {
+                margin-right: 14px;
+                padding-right: 28px;
+                &::after {
+                    font-size: 8px;
+                }
+                a{
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 35px 0 18px;
+    }
+    @media (min-width: 1400px) {
+        padding: 39px 0 20px;
+    }
+}

@@ -1,0 +1,770 @@
+@import 'libs/slick';
+@import 'libs/branches';
+@import 'libs/tagline';
+@import 'libs/subscription';
+@import 'libs/medical-center-page';
+@import 'libs/sign-up-now';
+
+.service-cost {
+    padding: 10px 0 25px;
+    .title{
+        margin-bottom: 24px;
+        h1{
+            margin: 0;
+            display: block;
+            font-size: 30px;
+            color: #000000;            
+            line-height: 35px;
+            font-weight: normal;
+            font-family: 'GT Eesti Pro Display Regular';
+        }
+    }
+    .filter-currencies{
+        margin-bottom: 10px;
+        .tabs{
+            display: flex;
+            overflow: scroll;
+            margin-right: -15px;
+            white-space: nowrap;
+            margin-bottom: 12px;
+            padding-right: 15px;
+            li{
+                margin-right: 41px;
+                &:last-child{
+                    margin-right: 0;
+                    padding-right: 15px;
+                }
+                a{
+                    font-size: 16px;
+                    color: #293842;
+                    line-height: 20px;
+                    position: relative;
+                    padding-bottom: 5px;
+                    display: inline-block;
+                    font-family: 'GT Eesti Pro Display Regular';
+                    &:hover{
+                        color: #00B6EF;
+                    }
+                    &::after{
+                        content: '';
+                        left: 0;
+                        width: 0;
+                        bottom: 0;
+                        height: 2px;
+                        position: absolute;
+                        background: #00B6EF;
+                        transition: all 0.4s;
+                    }
+                }
+            }
+            li.active{
+                a{
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        form{
+            position: relative;
+            margin-bottom: 22px;
+            button{
+                left: 0;
+                top: 50%;
+                z-index: 3;
+                border: none;
+                opacity: 0.3;
+                cursor: pointer;
+                font-size: 20px;
+                color: #313C42;
+                position: absolute;
+                background: transparent;
+                transform: translate(0, -50%);
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            input{
+                z-index: 0;
+                width: 100%;
+                height: 57px;
+                border: none;
+                font-size: 14px;
+                font-weight: 300;
+                color: #0F1728;
+                line-height: 20px;
+                padding: 0 20px 0 38px;
+                border-bottom: 1px solid #E3E8EA;
+            }
+            input::placeholder{
+                opacity: 0.2;
+                color: #0F1728;
+            }
+        }
+        .currencies{
+            display: flex;
+            align-items: center;
+            li{
+                a{
+                    font-size: 14px;
+                    color: #81939A;
+                    padding: 3px 7px;
+                    line-height: 16px;
+                    display: inline-block;
+                    border: 1px solid #DFEFF4;
+                    font-family: 'GT Eesti Pro Display Regular';
+                    transition: all 0.4s;
+                    &:hover{
+                        color: #00B6EF;
+                    }
+                }
+            }
+            li.active{
+                a{
+                    color: #fff;
+                    background: #00B6EF;
+                    border: 1px solid #00B6EF;
+                }
+            }
+        }
+    }
+    .service-content{
+        .accordionjs{
+            .acc_section {
+                .acc_head{
+                    cursor: pointer;
+                    font-size: 16px;
+                    color: #0F1728;
+                    line-height: 19px;
+                    position: relative;
+                    padding: 21px 30px 21px 0;
+                    border-bottom: 1px solid #E5E9EA;
+                    font-family: 'GT Eesti Pro Display Regular';
+                    transition: all 0.4s;
+                    &:hover{
+                        color: #00B6EF;
+                    }
+                    i{
+                        top: 50%;
+                        right: 0;
+                        font-size: 7px;
+                        color: #81949A;
+                        position: absolute;
+                        transform: translate(0, -50%);
+                        transition: all 0.4s;
+                    }
+                }
+                .acc_content{
+                    margin-top: -5px;
+                    .service-item{
+                        margin-bottom: 20px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        h5{
+                            font-size: 14px;
+                            color: #0F1728;
+                            line-height: 16px;
+                            font-weight: normal;
+                            margin-bottom: 13px;
+                            font-family: 'GT Eesti Pro Display Regular';
+                        }
+                        .item{
+                            position: relative;
+                            padding: 14px 14px 7px;
+                            border: 1px solid #E5E9EA;
+                            a{
+                                top: 0;
+                                left: 0;
+                                z-index: 2;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                            }
+                            p{
+                                font-size: 14px;
+                                color: #000000;
+                                line-height: 16px;
+                                font-weight: normal;
+                                margin-bottom: 14px;
+                                font-family: 'GT Eesti Pro Display Regular';
+                            }
+                            ul{
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                li{
+                                    margin-right: 13px;
+                                    margin-bottom: 9px;
+                                    &:last-child{
+                                        margin-right: 0;
+                                    }
+                                    i{
+                                        font-size: 16px;
+                                        color: #81939A;
+                                        line-height: 19px;
+                                        font-weight: normal;
+                                        text-decoration-line: line-through;
+                                        font-family: 'GT Eesti Pro Display Regular';
+                                    }
+                                    strong{
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        color: #D8554E;
+                                        line-height: 19px;
+                                        font-family: 'GT Eesti Pro Display Medium';
+                                    }
+                                    span{
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        color: #D8554E;
+                                        padding: 2px 7px;
+                                        line-height: 20px;
+                                        border-radius: 5px;
+                                        background: #FFF2F1;
+                                        display: inline-block;
+                                        font-family: 'GT Eesti Pro Display Medium';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .service-complex{
+                        .complex-item{
+                            position: relative;
+                            border: 1px solid #E5E9EA;
+                            padding: 18px 19px 14px 19px;
+                            a{
+                                top: 0;
+                                left: 0;
+                                z-index: 2;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                            }
+                            p{
+                                font-size: 14px;
+                                color: #000000;
+                                line-height: 16px;
+                                font-weight: normal;
+                                margin-bottom: 12px;
+                                font-family: 'GT Eesti Pro Display Regular';
+                            }
+                            ul{
+                                margin-bottom: 19px;
+                                li{
+                                    font-size: 12px;
+                                    color: #81939A;
+                                    font-weight: 300;
+                                    line-height: 18px;
+                                    position: relative;
+                                    padding-left: 18px;
+                                    text-transform: lowercase;
+                                    &::after{
+                                        content: '\e822';
+                                        left: 0;
+                                        top: 1px;
+                                        font-size: 8px;
+                                        color: #00B6EF;
+                                        position: absolute;
+                                        font-family: 'fontello';
+                                    }
+                                }
+                            }
+                            strong{
+                                display: flex;
+                                align-items: center;
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: #D8554E;
+                                line-height: 19px;
+                                font-family: 'GT Eesti Pro Display Medium';
+                                span{
+                                    font-size: 16px;
+                                    color: #81939A;
+                                    line-height: 19px;
+                                    margin-right: 13px;
+                                    font-weight: normal;
+                                    display: inline-block;
+                                    text-decoration-line: line-through;
+                                    font-family: 'GT Eesti Pro Display Regular';
+                                }
+                            }
+                        }
+                    }
+                }   
+            }
+            .acc_section.acc_active{
+                .acc_head{
+                    color: #00B6EF;
+                    border-bottom: 1px solid transparent;
+                    i{
+                        color: #00B6EF;
+                        transform: translate(0, -50%) rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 540px) {
+        .title{
+            margin-bottom: 29px;
+        }
+        .filter-currencies {
+            .tabs {
+                margin-right: 0;
+                padding-right: 0;
+                li {
+                    margin-right: 30px;
+                    &:last-child{
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 768px){
+        .filter-currencies{
+            margin-bottom: 15px;
+        }
+        .service-content {
+            .accordionjs {
+                .acc_section {
+                    .acc_head {
+                        font-size: 18px;
+                        line-height: 22px;
+                        padding: 21px 30px 21px 0;
+                    }
+                    .acc_content{
+                        .service-complex{
+                            display: flex;
+                            flex-wrap: wrap;
+                            .complex-item{
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 13px 0 30px;
+        .title {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .filter-currencies{
+            margin-bottom: 21px;
+        }
+        .service-content {
+            .accordionjs {
+                .acc_section {
+                    .acc_head {
+                        i {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 13px 0 35px;
+        .title {
+            margin-bottom: 47px;
+        }
+        .filter-currencies {
+            display: flex;
+            position: relative;
+            align-items: center;
+            padding-bottom: 80px;
+            justify-content: space-between;
+            .tabs {
+                margin-bottom: 0;
+                li {
+                    a {
+                        font-size: 16px;
+                        line-height: 28px;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+            .currencies{
+                li{
+                    margin-left: 6px;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
+            form{
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                margin-bottom: 0;
+                position: absolute;
+            }
+        }
+        .service-content {
+            .accordionjs {
+                .acc_section {
+                    .acc_head {
+                        font-size: 22px;
+                        line-height: 28px;
+                        padding: 22px 30px 22px 0;
+                    }
+                    .acc_content {
+                        .service-item {
+                            h5 {
+                                font-size: 18px;
+                                line-height: 22px;
+                            }
+                            .item {
+                                display: flex;
+                                align-items: center;
+                                padding: 18px 20px 18px;
+                                justify-content: space-between;
+                                p {
+                                    width: 50%;
+                                    font-size: 16px;
+                                    margin-bottom: 0;
+                                    line-height: 20px;
+                                }
+                                ul{
+                                    li{
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .service-complex{
+                            .complex-item{
+                                p{
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                                ul{
+                                    li{
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 13px 0 30px;
+        .title {
+            margin-bottom: 35px;
+            h1 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+        .filter-currencies {
+            padding-bottom: 92px;
+            .tabs {
+                li {
+                    margin-right: 40px;
+                    a {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .currencies {
+                li {
+                    a {
+                        font-size: 16px;
+                        line-height: 20px;
+                        padding: 4px 8px 3px;
+                    }
+                }
+            }
+            form{
+                button {
+                    font-size: 24px;
+                }
+                input {
+                    height: 62px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    padding: 0 20px 0 45px;
+                }
+            }
+        }
+        .service-content {
+            .accordionjs {
+                .acc_section {
+                    .acc_head {
+                        font-size: 24px;
+                        line-height: 28px;
+                        padding: 24px 30px 24px 0;
+                    }
+                    .acc_content {
+                        .service-item {
+                            h5 {
+                                font-size: 20px;
+                                line-height: 24px;
+                            }
+                            .item {
+                                p {
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                }
+                                ul {
+                                    li {
+                                        margin-right: 20px;
+                                        i {
+                                            font-size: 18px;
+                                            line-height: 22px;
+                                        }
+                                        strong {
+                                            font-size: 18px;
+                                            line-height: 22px;
+                                        }
+                                        span{
+                                            font-size: 16px;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .service-complex{
+                            .complex-item{
+                                width: 33.33%;
+                                padding: 30px 25px 30px;
+                                p {
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                }
+                                ul{
+                                    li{
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        padding-left: 22px;
+                                        &::after{
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                                strong {
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    span{
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        padding: 13px 0 60px;
+        .title {
+            margin-left: 4px;
+            margin-bottom: 38px;
+            h1 {
+                font-size: 60px;
+                line-height: 70px;
+            }
+        }
+        .service-content {
+            .accordionjs {
+                .acc_section {
+                    .acc_head {
+                        font-size: 26px;
+                        line-height: 30px;
+                        padding: 28px 30px 28px 0;
+                        i {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1800px) {
+        padding: 13px 0 60px;
+        .title {
+            margin-bottom: 38px;
+        }
+        .filter-currencies {
+            padding-bottom: 130px;
+            .tabs {
+                li {
+                    margin-right: 60px;
+                    a {
+                        font-size: 22px;
+                        line-height: 44px;
+                    }
+                }
+            }
+            .currencies {
+                transform: translate(0, 8px);
+                li {
+                    margin-left: 17px;
+                    a {
+                        font-size: 20px;
+                        line-height: 22px;
+                        padding: 8px 15px 7px;
+                    }
+                }
+            }
+            form {
+                button {
+                    font-size: 28px;
+                }
+                input {
+                    height: 67px;
+                    font-size: 22px;
+                    line-height: 30px;
+                    padding: 0 30px 0 50px;
+                }
+            }
+        }
+        .service-content {
+            .accordionjs {
+                .acc_section {
+                    .acc_head {
+                        font-size: 30px;
+                        line-height: 34px;
+                        padding: 36px 30px 36px 0;
+                    }
+                    .acc_content {
+                        margin-top: -8px;
+                        .service-item {
+                            margin-bottom: 40px;
+                            h5 {
+                                font-size: 24px;
+                                line-height: 30px;
+                                margin-bottom: 24px;
+                            }
+                            .item {
+                                padding: 30px 28px;
+                                p {
+                                    font-size: 22px;
+                                    line-height: 24px;
+                                    padding-left: 20px;
+                                }
+                                ul{
+                                    li{
+                                        margin-right: 26px;
+                                        span{
+                                            font-size: 18px;
+                                            padding: 3px 8px;
+                                            line-height: 23px;
+                                        }
+                                        i{
+                                            font-size: 22px;
+                                            line-height: 26px;
+                                        }
+                                        strong{
+                                            font-size: 22px;
+                                            line-height: 26px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .service-complex{
+                            .complex-item{
+                                padding: 52px 45px 48px;
+                                p {
+                                    font-size: 22px;
+                                    line-height: 24px;
+                                    margin-bottom: 22px;
+                                }
+                                ul{
+                                    margin-bottom: 32px;
+                                    li{
+                                        font-size: 18px;
+                                        line-height: 27px;
+                                        padding-left: 28px;
+                                        &::after {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                                strong{
+                                    font-size: 22px;
+                                    line-height: 26px;
+                                    span{
+                                        font-size: 22px;
+                                        line-height: 26px;
+                                        margin-right: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tagline {
+    padding-bottom: 30px;
+    @media (min-width: 540px) {
+        padding-bottom: 40px;
+    }
+    @media (min-width: 768px){
+        padding-bottom: 50px;
+    }
+    @media (min-width: 1024px) {
+        padding-bottom: 60px;
+    }
+    @media (min-width: 1200px) {
+        padding-bottom: 70px;
+    }
+    @media (min-width: 1400px) {
+        padding-bottom: 80px;
+    }
+    @media (min-width: 1600px) {
+        padding-bottom: 90px;
+    }
+    @media (min-width: 1800px) {
+        padding-bottom: 104px;
+    }
+}
+
+.branches {
+    padding: 0 0 40px;
+    @media (min-width: 540px) {
+        padding: 0 0 50px;
+    }
+    @media (min-width: 768px){
+        padding: 0 0 60px;
+    }
+    @media (min-width: 1024px) {
+        padding: 0 0 70px;
+    }
+    @media (min-width: 1200px) {
+        padding: 0 0 80px;
+    }
+    @media (min-width: 1400px) {
+        padding: 0 0 90px;
+    }
+    @media (min-width: 1600px) {
+        padding: 0 0 100px;
+    }
+    @media (min-width: 1800px) {
+        padding: 0 0 120px;
+    }
+}
+
+
+

@@ -1,0 +1,494 @@
+@import 'libs/slick';
+@import 'libs/branches';
+@import 'libs/tagline';
+@import 'libs/subscription';
+
+.bread-crumbs{
+    @media (min-width:1400px){
+        padding: 56px 0 20px
+    }
+}
+
+.insurance{
+    padding: 10px 0 40px;
+    .title{
+        margin-bottom: 28px;
+        h1{
+            margin-top: 0;
+            display: block;
+            font-size: 30px;
+            color: #000000;            
+            line-height: 35px;
+            font-weight: normal;
+            font-family: 'GT Eesti Pro Display Regular';
+        }
+    }
+    .text{
+        p{
+            font-size: 14px;
+            color: #3F3F3F;
+            line-height: 20px;
+            padding-bottom: 30px;
+            &:last-of-type{
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    @media (min-width:1200px){
+
+    }
+
+    @media (min-width: 1400px) {
+        .title{
+            h1 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+        .text{
+            font-size: 18px;
+            line-height: 25px;
+
+        }
+    }    
+    @media (min-width: 1600px) {
+        
+        .title{
+            margin-bottom: 62px;
+            h1 {
+                font-size: 60px;
+                line-height: 70px;
+            }
+        }
+        
+        .text {
+            margin-left: 3px;
+            p {
+                font-size: 22px;
+                line-height: 30px;
+                padding-bottom: 45px;
+                
+            }
+        }
+    }    
+}
+
+.insurance-companies{
+    .insurance-companies-title{
+        h2{
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+    }
+    .insurance-table{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .cell{
+            width: 50%;
+            height: 142px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid #E5E9EA;
+            padding: 20px 20px 19px;
+            margin-right: -1px;
+            margin-bottom: -1px;
+            &:nth-of-type(n+7){
+                display: none;
+            }
+            img{
+                max-height: 56px;
+                max-width: 113px;
+            }
+            p{
+                font-family: 'GT Eesti Pro Display Regular';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 17px;
+                margin-right: 30%;
+                color: #3F3F3F;
+              
+            }
+
+        }
+    }
+    @media (min-width: 768px) {
+        .insurance-table{    
+            .cell{
+                width: 33%;
+                &:nth-of-type(n+7){
+                    display: flex;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+    }
+    @media (min-width: 1200px) {
+        .insurance-table{    
+            .cell{
+                width: 25%;
+                // height: 180px;
+            }
+            
+        }
+    }
+    @media (min-width: 1400px) {
+        .insurance-table{    
+            .cell{
+                padding: 50px 48px 30px;
+                height: 269px;
+                img{
+                    max-width: 260px;
+                    max-height: 128px;
+                }
+                p{
+                    margin-top: 37px;
+                }
+            }
+        }
+    }    
+    @media (min-width: 1600px) {
+        padding: 25px 0;
+        .insurance-companies-title{
+            h2 {
+                font-size: 36px;
+                line-height: 42px;
+                margin-bottom: 40px;
+                margin-left: 8px
+            }
+        }
+        .text {
+            margin-top: 15px;
+            p {
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        .insurance-table{
+            padding-right: 4%;
+            .cell{
+                
+                img{
+                    max-height: 126px;
+                    max-width: 260px;
+                }
+                p{
+                    font-size: 22px;
+                    line-height: 30px;
+                    margin-top: 30px;
+                  
+                }
+    
+            }
+        }
+    }
+    @media (min-width: 1800px) {
+        margin-left: 0;
+    }
+}
+
+.ask-me{
+    padding: 43px 0 23px;
+    .ask-me-title{
+        margin-bottom: 10px;
+        h2{
+            margin-top: 0;
+            display: block;
+            font-size: 24px;
+            color: #000000;            
+            line-height: 26px;
+            font-weight: normal;
+            font-family: 'GT Eesti Pro Display Regular';
+            margin-right: 35%;
+        }
+        p{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 21px;
+            margin-right: 15%;
+        }
+    }
+    .ask-me-form{
+        form{
+            input{
+                padding: 32px 2px 15px;
+                border: none;
+                border-bottom: 1px solid #81949A;
+                width: 100%;
+                &::placeholder{
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #81949A;
+                }
+            }
+            label{
+                display: block;
+                font-weight: 300;
+                font-size: 12px;
+                position: relative;
+                padding-left: 46px;
+                margin-top: 27px;
+                line-height: 17px;
+                a{
+                    color: #00B6EF;
+                    transition: all .3s;
+                    &:hover{
+                        color: #2980B9;
+                    }
+                }
+                .jcf-checkbox{
+                    top: -4px;
+                    left: 1px;
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                    position: absolute;
+                    border: 1px solid #00B6EF;
+                    transition: all 0.5s;
+                    &::after{
+                        content: '';
+                        border-bottom: 2px solid #00B6EF;
+                        border-left: 2px solid #00B6EF;
+                        top: 49%;
+                        left: 50%;
+                        width: 10px;
+                        height: 6px;
+                        opacity: 0;
+                        font-size: 10px;
+                        color: #517ea1;
+                        position: absolute;
+                        transform: translate(-50%,-50%) rotate(-45deg);
+                        transition: all 0.5s;
+                    }
+                    input{
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                        position: absolute;
+                        z-index: 2;
+                    }
+                }
+                .jcf-checked{
+                    border: 1px solid #517ea1;
+                    &::after{
+                        opacity: 1;
+                    }
+                }
+            }
+            button{
+                margin-top: 29px;
+                padding: 15px 42px;
+                border-radius: 91px;
+                border: none;
+                background: #00B6EF;
+                color: #fff;
+                font-size: 14px;
+                line-height: 20px;
+                transition: all .3s;
+                i{
+                    font-size: 20px;
+                    display: inline-block;
+                    transform: translate(8px,0);
+                }
+                &:hover{
+                    background-color: #2980B9;
+                }
+            }
+        }
+    }
+    .ask-me-text{
+        display: flex;
+        margin-right: 16%;
+        margin-top: 36px;
+        p{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            color: #81939A;
+            margin-left: 24px;
+            margin-top: 8px;
+        }
+        i{
+            font-size: 28px;
+        }
+    }
+    @media (min-width: 768px) {
+        .insurance-table{    
+            .cell{
+                width: 33%;
+                &:nth-of-type(n+7){
+                    display: flex;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 55px 0 35px;
+    }
+    @media (min-width: 1200px) {
+        .ask-me-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .ask-me-title{
+                width: 48%;
+                h2{
+                    width: 60%;
+                    font-size: 36px;
+                    line-height: 42px;
+                }
+                p{
+                    width: 70%;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+            .ask-me-form{
+                width: 48%;
+                margin-top: 30px;
+            }
+            .ask-me-text{
+                flex-direction: column;
+                width: 25%;
+                margin-top: -120px;
+                i{
+
+                }
+                p{
+                    margin-left: 0;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 95px 0 ;
+        margin-left: 3px;
+        .ask-me-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .ask-me-title{
+                width: 46%;
+                margin-left: 3px;
+                h2{
+                    width: 60%;
+                    font-size: 48px;
+                    line-height: 56px;
+                }
+                p{
+                    width: 70%;
+                    font-size: 22px;
+                    line-height: 30px;
+                    margin-top: 51px;
+                }
+            }
+            .ask-me-form{
+                width: 50%;
+                padding-right: 8%;
+                margin-top: 26px;
+                padding-left: 5px;
+                form{
+                    input{
+                        padding-top: 68px;
+                        padding-bottom: 17px;
+                        &::placeholder{
+                            font-size: 22px;
+                            line-height: 30px;
+                        }
+                    }
+                    label{
+                        font-size: 18px;
+                        line-height: 25px;
+                        margin-top: 48px;
+                    }
+                    button{
+                        font-size: 22px;
+                        line-height: 30px;
+                        margin-top: 40px;
+                        padding: 25px 63px;
+                    }
+                }
+            }
+            .ask-me-text{
+                flex-direction: column;
+                width: 32%;
+                margin-top: -128px;
+                padding-left: 7px;
+                p{
+                    margin-left: 0;
+                    margin-top: 25px;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+       
+}
+
+.tagline {
+    padding-bottom: 30px;
+    @media (min-width: 540px) {
+        padding-bottom: 40px;
+    }
+    @media (min-width: 768px){
+        padding-bottom: 50px;
+    }
+    @media (min-width: 1024px) {
+        padding-bottom: 60px;
+    }
+    @media (min-width: 1200px) {
+        padding-bottom: 70px;
+    }
+    @media (min-width: 1400px) {
+        padding-bottom: 80px;
+    }
+    @media (min-width: 1600px) {
+        padding-bottom: 90px;
+    }
+    @media (min-width: 1800px) {
+        padding-bottom: 104px;
+    }
+}
+
+.branches {
+    padding: 0 0 40px;
+    @media (min-width: 540px) {
+        padding: 0 0 50px;
+    }
+    @media (min-width: 768px){
+        padding: 0 0 60px;
+    }
+    @media (min-width: 1024px) {
+        padding: 0 0 70px;
+    }
+    @media (min-width: 1200px) {
+        padding: 0 0 80px;
+    }
+    @media (min-width: 1400px) {
+        padding: 0 0 90px;
+    }
+    @media (min-width: 1600px) {
+        padding: 0 0 100px;
+    }
+    @media (min-width: 1800px) {
+        padding: 0 0 120px;
+    }
+}

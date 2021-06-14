@@ -1,0 +1,426 @@
+.medical-center-page {
+    padding: 25px 0;
+    .medical-center-title{
+        margin-bottom: 23px;
+        h2{
+            margin-top: 0;
+            display: block;
+            font-size: 24px;
+            color: #000000;            
+            line-height: 28px;
+            font-weight: normal;
+            font-family: 'GT Eesti Pro Display Regular';
+        }
+        .link{
+            display: none;
+            flex-wrap: wrap;
+            margin-top: 19px;
+            align-items: center;
+            a{
+                margin-bottom: 15px;
+            }
+            .link-about{
+                width: 135px;
+                height: 50px;
+                display: flex;
+                font-size: 16px;
+                color: #00B6EF;
+                line-height: 22px;
+                margin-right: 24px;
+                align-items: center;
+                border-radius: 73px;
+                justify-content: center;
+                border: 1px solid #00B6EF;
+                font-family: 'GT Eesti Pro Display Regular';
+                transition: all 0.3s;
+                &:hover{
+                    color: #fff;
+                    background: #00B6EF;
+                }
+                i{
+                    font-size: 16px;
+                    display: inline-block;
+                    transform: translate(8px, 0);
+                }
+            }
+            .link-video{
+                font-size: 16px;
+                color: #00B6EF;
+                line-height: 22px;
+                margin-right: 32px;
+                padding-left: 25px;
+                position: relative;
+                text-transform: capitalize;
+                font-family: 'GT Eesti Pro Display Regular';
+                transition: all 0.3s;
+                &:hover{
+                    color: #2980B9;
+                }
+                span{
+                    display: none;
+                    font-family: 'GT Eesti Pro Display Regular';
+                }
+                i{
+                    left: 0;
+                    top: 50%;
+                    font-size: 16px;
+                    position: absolute;
+                    transform: translate(0, -50%);
+                }
+            }
+            .link-cube{
+                font-size: 16px;
+                color: #00B6EF;
+                line-height: 22px;
+                padding-left: 36px;
+                position: relative;
+                font-family: 'GT Eesti Pro Display Regular';
+                transition: all 0.3s;
+                &:hover{
+                    color: #2980B9;
+                }
+                i{
+                    left: 0;
+                    top: 50%;
+                    font-size: 20px;
+                    position: absolute;
+                    transform: translate(0, -50%);
+                }
+            }
+        }
+    }
+    .medical-center-text{
+        p{
+            font-size: 14px;
+            color: #3F3F3F;
+            line-height: 20px;
+            padding-bottom: 10px;
+        }
+        .link{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 14px;
+            align-items: center;
+            a{
+                margin-bottom: 15px;
+            }
+            .link-about{
+                width: 135px;
+                height: 50px;
+                display: flex;
+                font-size: 16px;
+                color: #00B6EF;
+                line-height: 22px;
+                margin-right: 24px;
+                align-items: center;
+                border-radius: 73px;
+                justify-content: center;
+                border: 1px solid #00B6EF;
+                font-family: 'GT Eesti Pro Display Regular';
+                transition: all 0.3s;
+                &:hover{
+                    color: #fff;
+                    background: #00B6EF;
+                }
+                i{
+                    font-size: 16px;
+                    display: inline-block;
+                    transform: translate(8px, 0);
+                }
+            }
+            .link-video{
+                font-size: 16px;
+                color: #00B6EF;
+                line-height: 22px;
+                margin-right: 32px;
+                padding-left: 25px;
+                position: relative;
+                text-transform: capitalize;
+                font-family: 'GT Eesti Pro Display Regular';
+                transition: all 0.3s;
+                &:hover{
+                    color: #2980B9;
+                }
+                span{
+                    display: none;
+                    font-family: 'GT Eesti Pro Display Regular';
+                }
+                i{
+                    left: 0;
+                    top: 50%;
+                    font-size: 16px;
+                    position: absolute;
+                    transform: translate(0, -50%);
+                }
+            }
+            .link-cube{
+                font-size: 16px;
+                color: #00B6EF;
+                line-height: 22px;
+                padding-left: 36px;
+                position: relative;
+                font-family: 'GT Eesti Pro Display Regular';
+                transition: all 0.3s;
+                &:hover{
+                    color: #2980B9;
+                }
+                i{
+                    left: 0;
+                    top: 50%;
+                    font-size: 20px;
+                    position: absolute;
+                    transform: translate(0, -50%);
+                }
+            }
+        }
+    }
+    @media (min-width: 540px) {
+        .medical-center-title {
+            h2 {
+                margin-right: 0;
+            }
+            .link {
+                margin-top: 17px;
+                .link-about {
+                    margin-right: 25px;
+                }
+            }
+        }
+        .medical-center-text{
+            padding-right: 10px;
+            .link {
+                margin-top: 17px;
+                .link-about {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 24px 0 45px;
+        .medical-center-title {
+            display: flex;
+            margin-bottom: 23px;
+            align-items: flex-start;
+            justify-content: space-between;
+            h2{
+                width: 42%;
+            }
+            .link {
+                margin-top: 22px;
+            }
+        }
+        .medical-center-text {
+            padding-right: 0;
+            .link {
+                margin-top: 22px;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 31px 0 60px;
+        .medical-center-content{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .medical-center-title{
+            width: 62%;
+            flex-direction: column;
+            h2{
+                width: 68%;
+                margin-bottom: 33px;
+            }
+            .link {
+                margin: 0;
+                display: block;
+                .link-about {
+                    margin-right: 24px;
+                    i {
+                        font-size: 20px;
+                    }
+                }
+                .link-video {
+                    span {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .medical-center-text{
+            width: 50%;
+            margin-top: 2px;
+            .link {
+                display: none;
+                .link-about {
+                    margin-right: 24px;
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 52px 0 80px;
+        .medical-center-title {
+            margin-bottom: 60px;
+            h2 {
+                width: 75%;
+                font-size: 40px;
+                line-height: 45px;
+                margin-bottom: 40px;
+            }
+            .link {
+                .link-about {
+                    width: 154px;
+                    height: 50px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-right: 38px;
+                }
+                .link-video {
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-right: 35px;
+                }
+                .link-cube {
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding-left: 30px;
+                }
+            }
+        }
+        .medical-center-text {
+            width: 56%;
+            margin-top: 0;
+            p{
+                font-size: 16px;
+                line-height: 22px;
+            }
+            .link {
+                margin-top: 28px;
+                .link-about {
+                    width: 154px;
+                    height: 50px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-right: 38px;
+                }
+                .link-video {
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-right: 35px;
+                }
+                .link-cube {
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        padding: 60px 0 100px;
+        .medical-center-title {
+            width: 30%;
+            margin-bottom: 0;
+            margin-left: 8px;
+            h2 {
+                width: 100%;
+                font-size: 48px;
+                line-height: 56px;
+                margin-bottom: 39px;
+            }
+            .link {
+                .link-about {
+                    width: 230px;
+                    height: 64px;
+                    font-size: 22px;
+                    line-height: 31px;
+                    margin-right: 48px;
+                    i {
+                        font-size: 28px;
+                        margin-left: 10px;
+                        transform: translate(8px,0);
+                    }
+                }
+                .link-video {
+                    font-size: 22px;
+                    line-height: 31px;
+                    padding-left: 35px;
+                    margin-right: 48px;
+                    text-transform: initial;
+                    span{
+                        display: inline-block;
+                    }
+                    i{
+                        font-size: 20px;
+                    }
+                }
+                .link-cube {
+                    font-size: 22px;
+                    line-height: 31px;
+                    margin-right: 35px;
+                    padding-left: 46px;
+                    text-transform: initial;
+                    i{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .medical-center-text {
+            width: 58%;
+            margin-top: 10px;
+            p {
+                font-size: 22px;
+                line-height: 30px;
+                padding-bottom: 22px;
+            }
+            .link {
+                margin-top: 58px;
+                .link-about {
+                    width: 230px;
+                    height: 64px;
+                    font-size: 22px;
+                    line-height: 31px;
+                    margin-right: 48px;
+                    i {
+                        font-size: 28px;
+                        margin-left: 10px;
+                        transform: translate(8px,0);
+                    }
+                }
+                .link-video {
+                    font-size: 22px;
+                    line-height: 31px;
+                    padding-left: 35px;
+                    margin-right: 48px;
+                    text-transform: initial;
+                    span{
+                        display: inline-block;
+                    }
+                    i{
+                        font-size: 20px;
+                    }
+                }
+                .link-cube {
+                    font-size: 22px;
+                    line-height: 31px;
+                    margin-right: 35px;
+                    padding-left: 46px;
+                    text-transform: initial;
+                    i{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1800px) {
+        .medical-center-title {
+            width: 26%;
+        }
+    }
+}

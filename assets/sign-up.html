@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Мед Авеню</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/sign-up.min.css" data-inprogress="">
+</head>
+
+<body>
+  <!-- Header -->
+  <include src="assets/templates/header.html"></include>
+
+   <!-- Основной контент -->
+  <main class="wrapper">
+    
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="javascript:void(0)">Пациентам</a></li>
+                <li><span>Стоимость услуг</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="title">
+        <div class="container">
+            <h1>Запись на прием</h1>
+        </div>
+    </div>
+    <section class="sign-up">
+        <div class="container">
+            <span>Заполните форму ниже или закажите обратный звонок</span>
+            <div class="wrapper">
+                <form action="">
+                    <select name="centre" id="">
+                        <option value disabled selected>Выберите центр</option>
+                        <option value="lorem">Lorem</option>
+                    </select>
+                    <select name="route" id="">
+                        <option value disabled selected>Выберите направление</option>
+                        <option value="lorem">Lorem</option>
+                    </select>
+                    <select name="doctor" id="">
+                        <option value disabled selected>Выберите врача</option>
+                        <option value="lorem">Lorem</option>
+                    </select>
+                    <select name="date" id="">
+                        <option value disabled selected>Дата приема</option>
+                        <option value="lorem">Lorem</option>
+                    </select>
+                    <select name="time" id="">
+                        <option value disabled selected>Время приема</option>
+                        <option value="lorem">Lorem</option>
+                    </select>
+                    <input type="text" name="name" placeholder="Имя и фамилия *">
+                    <input type="number" name="phone" placeholder="Номер телефона *">
+                    <label for="">
+                        <input type="checkbox">
+                    </label>
+                    
+                </form>
+                <div class="tel">
+                    <h3>Не хотите заполнять форму?</h3>
+                    <span>Записаться на консультацию вы можете по телефону или заказав обратный звонок:</span>
+                    <a href="tel:7757" class="tel"><i class="icon-tel"></i>7757 (A1, MTC)</a>
+                    <a href="javascript:void(0)" class="recording">Обратный звонок<i class="icon-arrow3"></i></a>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <include src="assets/templates/medical-center-page.html"></include>
+
+    <include src="assets/templates/sign-up-now.html"></include>
+
+    <include src="assets/templates/tagline.html"></include>
+      
+    <include src="assets/templates/branches.html"></include>
+
+    <include src="assets/templates/subscription.html"></include>
+
+  </main>
+
+  <!-- Footer -->
+  <include src="assets/templates/footer.html"></include>
+
+  <!-- Скрипты -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.matchHeight.min.js"></script>
+  <script src="js/accordion.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/service-cost.min.js"></script>
+
+</body>
+
+</html>
+
