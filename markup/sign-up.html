@@ -100,8 +100,8 @@
         <div class="container">
             <ul>
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="javascript:void(0)">Пациентам</a></li>
-                <li><span>Стоимость услуг</span></li>
+                <li><a href="javascript:void(0)">О центре</a></li>
+                <li><span>Администрация центра</span></li>
             </ul>
         </div>
     </div>
@@ -116,83 +116,50 @@
             <span>Заполните форму ниже или закажите обратный звонок</span>
             <div class="wrapper">
                 <form action="">
-                    <select name="centre" id="">
-                        <option value="" disabled="" selected="">Выберите центр</option>
-                        <option value="lorem">Lorem</option>
-                    </select>
-                    <select name="route" id="">
-                        <option value="" disabled="" selected="">Выберите направление</option>
-                        <option value="lorem">Lorem</option>
-                    </select>
-                    <select name="doctor" id="">
-                        <option value="" disabled="" selected="">Выберите врача</option>
-                        <option value="lorem">Lorem</option>
-                    </select>
-                    <select name="date" id="">
-                        <option value="" disabled="" selected="">Дата приема</option>
-                        <option value="lorem">Lorem</option>
-                    </select>
-                    <select name="time" id="">
-                        <option value="" disabled="" selected="">Время приема</option>
-                        <option value="lorem">Lorem</option>
-                    </select>
-                    <input type="text" name="name" placeholder="Имя и фамилия *">
-                    <input type="number" name="phone" placeholder="Номер телефона *">
-                    <label for="">
-                        <input type="checkbox">
-                    </label>
-                    
+                    <div class="select">
+                        <select name="centre" id="">
+                            <option value="" disabled="" selected="">Выберите центр</option>
+                            <option value="lorem">Lorem</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="route" id="">
+                            <option value="" disabled="" selected="">Выберите направление</option>
+                            <option value="lorem">Lorem</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="doctor" id="">
+                            <option value="" disabled="" selected="">Выберите врача</option>
+                            <option value="lorem">Lorem</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="date" id="">
+                            <option value="" disabled="" selected="">Дата приема</option>
+                            <option value="lorem">Lorem</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="time" id="">
+                            <option value="" disabled="" selected="">Время приема</option>
+                            <option value="lorem">Lorem</option>
+                        </select>
+                    </div>
+                    <input class="input" type="text" name="name" placeholder="Имя и фамилия *">
+                    <input class="input" type="text" name="phone" placeholder="Номер телефона *">
+                    <label><input type="checkbox" checked="">Я даю согласие на обработку <a href="javascript:void(0)">персональных данных.</a></label>
+                    <button>Отправить вопрос <i class="icon-arrow-button"></i></button>
                 </form>
                 <div class="tel">
                     <h3>Не хотите заполнять форму?</h3>
                     <span>Записаться на консультацию вы можете по телефону или заказав обратный звонок:</span>
-                    <a href="tel:7757" class="tel"><i class="icon-tel"></i>7757 (A1, MTC)</a>
+                    <a href="tel:7757" class="phone"><i class="icon-tel"></i>7757 (A1, MTC)</a>
                     <a href="javascript:void(0)" class="recording">Обратный звонок<i class="icon-arrow3"></i></a>
                   </div>
             </div>
         </div>
     </section>
-
-    <section class="medical-center-page">
-    <div class="container">
-      <div class="medical-center-content">
-        <div class="medical-center-title">
-          <h2>Многопрофильный медицинский центр в Минске</h2>
-          <div class="link">
-            <a href="javascript:void(0)" class="link-video"><i class="icon-play"></i><span>Смотреть</span> видео</a>
-            <a href="javascript:void(0)" class="link-cube"><i class="icon-cube"></i>3D тур</a>
-          </div>
-        </div>
-        <div class="medical-center-text">
-          <p>С момента, когда медцентр принял своего первого паци­ента, у нас сложился коллек­тив, который отличает высо­кий профессиональный уро­вень, любовь к своему делу, творческий энтузиазм.</p>
-          <p>Мы макси­мально использовали весь опыт, наработанный потенциал, знания современной медицины и воз­можности новейших аппаратных комплексов для завоевания вашего доверия. До мелочей продумав организацию медцентра, мы позаботились о том, чтобы он стал не только идеальным лечебным учреждением, но и местом активного отдыха.</p>
-          <p>Отрадно, что наши усилия по достоинству оценивают пациенты.</p>
-          <div class="link">
-            <a href="javascript:void(0)" class="link-video"><i class="icon-play"></i><span>Смотреть</span> видео</a>
-            <a href="javascript:void(0)" class="link-cube"><i class="icon-cube"></i>3D тур</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <section class="sign-up-now">
-    <div class="container">
-        <div class="sign-up-now-content">
-            <div class="text">
-                <h3>Запишитесь прямо сейчас</h3>
-                <p>Наш менеджер свяжется с вами, проконсультирует и поможет выбрать удобное время приёма.</p>
-            </div>
-            <form action="">
-                <input type="text" placeholder="Ваш номер телефона">
-                <button>Отправить<i class="icon-arrow3"></i></button>
-            </form>
-            <div class="img">
-                <img src="img/sign-up-now-img.jpg" alt="">
-            </div>
-        </div>
-    </div>
-</section>
 
     <section class="tagline">
     <div class="container">
@@ -202,65 +169,6 @@
     </div>
 </section>
       
-    <section class="branches">
-  <div class="container">
-    <div class="title">
-      <h2>Наши филиалы</h2>
-      <div class="communication">
-        <p><i class="icon-tel"></i> Единый многоканальный номер для связи</p>
-        <strong>7757 (А1, МТС)</strong>
-      </div>
-    </div>
-  </div>
-  <div class="branches-content">
-    <div class="branches-item">
-      <a href="jabascript:void(0)"></a>
-      <h4>Медавеню Грибоедова <i class="icon-branches-arrow"></i></h4>
-      <span>Минск, Грибоедова 11</span>
-      <ul>
-        <li><i class="icon-timer"></i> Ежедневно с 8:00 до 21:00</li>
-        <li><i class="icon-tel"></i> +375 242-23-23</li>
-      </ul>
-    </div>
-    <div class="branches-item">
-      <a href="jabascript:void(0)"></a>
-      <h4>Медавеню Грибоедова <i class="icon-branches-arrow"></i></h4>
-      <span>Минск, Грибоедова 11</span>
-      <ul>
-        <li><i class="icon-timer"></i> Ежедневно с 8:00 до 21:00</li>
-        <li><i class="icon-tel"></i> +375 242-23-23</li>
-      </ul>
-    </div>
-    <div class="branches-item">
-      <a href="jabascript:void(0)"></a>
-      <h4>Медавеню Грибоедова <i class="icon-branches-arrow"></i></h4>
-      <span>Минск, Грибоедова 11</span>
-      <ul>
-        <li><i class="icon-timer"></i> Ежедневно с 8:00 до 21:00</li>
-        <li><i class="icon-tel"></i> +375 242-23-23</li>
-      </ul>
-    </div>
-    <div class="branches-item">
-      <a href="jabascript:void(0)"></a>
-      <h4>Медавеню Грибоедова <i class="icon-branches-arrow"></i></h4>
-      <span>Минск, Грибоедова 11</span>
-      <ul>
-        <li><i class="icon-timer"></i> Ежедневно с 8:00 до 21:00</li>
-        <li><i class="icon-tel"></i> +375 242-23-23</li>
-      </ul>
-    </div>
-    <div class="branches-item">
-      <a href="jabascript:void(0)"></a>
-      <h4>Медавеню Грибоедова <i class="icon-branches-arrow"></i></h4>
-      <span>Минск, Грибоедова 11</span>
-      <ul>
-        <li><i class="icon-timer"></i> Ежедневно с 8:00 до 21:00</li>
-        <li><i class="icon-tel"></i> +375 242-23-23</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
     <section class="subscription">
     <div class="container">
         <div class="subscription-content">
@@ -287,8 +195,10 @@
   <script src="js/jquery.matchHeight.min.js"></script>
   <script src="js/accordion.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jcf.min.js"></script>
+  <script src="js/jcf.checkbox.min.js"></script>
   <script src="js/script.min.js"></script>
-  <script src="js/service-cost.min.js"></script>
+  <script src="js/sign-up.min.js"></script>
 
 </body>
 

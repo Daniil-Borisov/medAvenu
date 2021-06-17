@@ -1,16 +1,349 @@
+@import 'libs/tagline';
+@import 'libs/subscription';
+
 .sign-up{
+    padding-bottom: 30px;
+    span{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: #0F1728;
+    }
     .wrapper{
         form{
             select, input{
-                width: 100%;
+                padding: 32px 2px 15px;
                 border: none;
                 border-bottom: 1px solid #81949A;
-                font-size: 14px;
-                padding-bottom: 16px;
-                color: #81949A;
-                margin-top: 30px;
+                width: 100%;
+                &::placeholder{
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #81949A;
+                }
             }
-            
+            select{
+                font-weight: 300;
+                font-size: 14px;
+                color: #81949A;
+            }
+            label{
+                display: block;
+                font-weight: 300;
+                font-size: 12px;
+                position: relative;
+                padding-left: 46px;
+                margin-top: 27px;
+                line-height: 17px;
+                a{
+                    color: #00B6EF;
+                    transition: all .3s;
+                    &:hover{
+                        color: #2980B9;
+                    }
+                }
+                .jcf-checkbox{
+                    top: -4px;
+                    left: 1px;
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                    position: absolute;
+                    border: 1px solid #00B6EF;
+                    transition: all 0.5s;
+                    &::after{
+                        content: '';
+                        border-bottom: 2px solid #00B6EF;
+                        border-left: 2px solid #00B6EF;
+                        top: 49%;
+                        left: 50%;
+                        width: 10px;
+                        height: 6px;
+                        opacity: 0;
+                        font-size: 10px;
+                        color: #517ea1;
+                        position: absolute;
+                        transform: translate(-50%,-50%) rotate(-45deg);
+                        transition: all 0.5s;
+                    }
+                    input{
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                        position: absolute;
+                        z-index: 2;
+                    }
+                }
+                .jcf-checked{
+                    border: 1px solid #517ea1;
+                    &::after{
+                        opacity: 1;
+                    }
+                }
+            }
+            button{
+                margin-top: 29px;
+                padding: 15px 42px;
+                border-radius: 91px;
+                border: none;
+                background: #00B6EF;
+                color: #fff;
+                font-size: 14px;
+                line-height: 20px;
+                transition: all .3s;
+                i{
+                    font-size: 20px;
+                    display: inline-block;
+                    transform: translate(8px,0);
+                }
+                &:hover{
+                    background-color: #2980B9;
+                }
+            }
+        }
+        .tel{
+            margin: 30px 0 50px;
+            padding: 24px 20px 20px 20px;
+            border: 1px solid #F1F6F9;
+            h3{
+                font-size: 24px;
+                line-height: 28px;
+                color: #000;
+                margin-bottom: 20px;
+            }
+            span{
+                font-size: 12px;
+                line-height: 17px;
+                color: #81939A;
+                display: block;
+            }
+            .phone{
+                display: inline-block;
+                i{
+                    color: #00B6EF;
+                    font-size: 14px;
+                    line-height: 23px;
+                    margin-right: 15px;
+                }
+                font-size: 20px;
+                line-height: 23px;
+                color: #000;
+                font-weight: 600;
+                padding: 13px 45px 13px 19px;
+                border: 1px solid #00B6EF;
+                border-radius: 73px;
+                margin: 23px 0;
+                position: relative;
+                &::before{
+                    content: '\e803';
+                    font-size: 8px;
+                    top: 50%;
+                    right: 23px;
+                    color: #81949A;
+                    position: absolute;
+                    font-family: 'fontello';
+                    transform: translate(0, -50%);
+                    transition: all 0.3s;
+                }
+            }
+            .recording{
+                padding: 16px 50px 15px 45px;
+                display: inline-block;
+                background-color: #00B6EF;
+                border-radius: 91px;
+                color: #fff;
+                font-size: 14px;
+                line-height: 140%;
+                &:hover{
+                    background: #2980B9;
+
+                }
+            }
+        }
+    }
+    @media(min-width: 1024px){
+        padding-bottom: 60px;
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            form{
+                width: 50%;
+                .select{
+                    position: relative;
+                    &::before{
+                        content: '\e803';
+                        top: 65%;
+                        right: 0;
+                        font-size: 6px;
+                        color: #81949A;
+                        position: absolute;
+                        font-family: 'fontello';
+                        transform: translate(0, -50%);
+                        transition: all 0.3s;
+                    }
+                }
+            }
+            .tel{
+                width: 43%;
+                height: fit-content;
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .phone{
+                    border: none;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    @media(min-width: 1200px){
+        padding-bottom: 70px;
+        span{
+            font-size: 16px;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            form{
+                width: 48%;
+                .select::before{
+                    font-size: 7px;
+                }
+                select, button{
+                    font-size: 16px;
+                }
+                input::placeholder{
+                    font-size: 16px;
+                }
+                label{
+                    font-size: 14px;
+                }
+            }
+            .tel{
+                width: 301px;
+                height: fit-content;
+                h3{
+                    font-size: 28px;
+                }
+                span{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                .phone{
+                    display: inline-block;
+                    margin: 20px 0 23px
+                    i{
+                        font-size: 24px;
+                        line-height: 23px;
+                    }
+                    font-size: 26px;
+                }
+                .recording{
+                    font-size: 16px;
+                    line-height: 140%;
+                }
+            }
+        }
+    }
+    @media(min-width: 1400px){
+        padding-bottom: 100px;
+        span{
+            font-size: 18px;
+        }
+        .wrapper{
+            form{
+                width: 48%;
+                .select::before{
+                    font-size: 8px;
+                }
+                select, button{
+                    font-size: 18px;
+                }
+                input::placeholder{
+                    font-size: 18px;
+                }
+                label{
+                    font-size: 16px;
+                }
+                button{
+                    padding: 25px 63px;
+                }
+            }
+            .tel{
+                width: 350px;
+                padding: 32px;
+                h3{
+                    font-size: 32px;
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                .phone{
+                    i{
+                        font-size: 28px;
+                        line-height: 23px;
+                    }
+                    font-size: 30px;
+                }
+                .recording{
+                    font-size: 18px;
+                    line-height: 140%;
+                }
+            }
+        }
+        
+    }
+    @media(min-width: 1600px){
+        padding-bottom: 120px;
+        font-size: 22px;
+        .wrapper{
+            form{
+                width: 48%;
+                .select::before{
+                    font-size: 10px;
+                }
+                select, button{
+                    font-size: 22px;
+                }
+                input::placeholder{
+                    font-size: 22px;
+                }
+                label{
+                    font-size: 18px;
+                }
+            }
+            .tel{
+                width: 415px;
+                padding: 55px;
+                h3{
+                    font-size: 36px;
+                    margin-bottom: 32px;
+                }
+                span{
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+                .phone{
+                    margin: 27px 0 32px;
+                    i{
+                        font-size: 30px;
+                        line-height: 23px;
+                    }
+                    font-size: 36px;
+                    padding-right: 0;
+                    &:before{
+                        right: -30px;
+                    }
+                }
+                .recording{
+                    font-size: 22px;
+                    line-height: 140%;
+                }
+            }
         }
     }
 }

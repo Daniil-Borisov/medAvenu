@@ -342,7 +342,7 @@
             overflow: scroll;
             margin-right: -15px;
             white-space: nowrap;
-            margin-bottom: 12px;
+            margin-bottom: 30px;
             padding-right: 15px;
             li{
                 margin-right: 41px;
@@ -423,6 +423,7 @@
             margin-top: 15px;
         }
         .slick-arrow{
+            margin-top: 20px;
             left: 0;
             top:100%;
             width: 46px;
@@ -458,6 +459,58 @@
         .next{
             left: 65px;
         }
+        .slick-slider{
+            margin-bottom: 50px;
+        }
+        .diplomas-slider{
+            img{
+                height: 156px;
+                margin-right: 13px;
+            }
+        }
+        .schedule-slider{
+            .item{
+                padding: 16px 21px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 128px;
+                border: 1px solid #E5E9EA;
+                .date{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 18px;
+                    color: #81949A;
+                }
+                .time{
+                    width: 75%;
+                    span{
+                        color: #81949A;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .active-item{
+                border: 1px solid #00B6EF;
+                .date{
+                    color: #0F1728;
+                }
+                .time{
+                    span{
+                        a{
+                            background: rgba(0, 182, 239, 0.13);
+                            margin: 3px 2px;
+                            color: #00B6EF;
+                            display: inline-block;
+                            padding: 2px 5px;
+                            border-radius: 10.5px;
+                            font-size: 14px;
+                            font-family: 'GT Eesti Pro Display Regular';
+                        }
+                    }
+                }
+            }
+        }
     }
     @media(min-width:540px){
         .about-doctor-content{
@@ -471,6 +524,12 @@
                     }
                 }
             }
+            .diplomas-slider{
+                img{
+                    height: 210px;
+                    margin-right: 13px;
+                }
+            }
         }
     }
     @media(min-width:1024px){
@@ -481,16 +540,27 @@
             }
         }
         .about-doctor-content{
+            .tabs{
+                overflow: auto;
+            }
             .diplomas-slider{
-                .item{
-                    min-height: 373px;
-                    
+                img{
+                    height: auto;
+                }
+            }
+            .schedule-slider{
+                .next{
+                    left: unset;
+                    right: -50px
+                }
+                .prev{
+                    left: -50px;
                 }
             }
             .slick-arrow{
                 top: 49%;
                 z-index: 4;
-                
+                margin: 0;
                 transform: translate(0, -50%);
             }
             .next {
@@ -509,7 +579,7 @@
        } 
         .about-doctor-content{
             .tabs {
-                margin-bottom: 0;
+                
                 li {
                     a {
                         font-size: 16px;
@@ -518,6 +588,7 @@
                     }
                 }
             }
+            
         }
     }
     @media(min-width: 1400px){
@@ -528,11 +599,23 @@
         } 
         .about-doctor-content{
             .tabs {
+                margin-bottom: 60px;
                 li {
                     margin-right: 40px;
                     a {
                         font-size: 18px;
                         line-height: 30px;
+                    }
+                }
+            }
+            .text{
+                font-size: 18px;
+                line-height: 26px;
+            }
+            .schedule-slider{
+                .item{
+                    .time{
+                        width: 100%;
                     }
                 }
             }
@@ -546,6 +629,16 @@
                 height: 60px;
                 i {
                     font-size: 20px;
+                }
+            }
+            .schedule-slider{
+                width: 90%;
+                margin: 0 auto;
+                .next{
+                    right: -65px;
+                }
+                .prev{
+                    left: -65px;
                 }
             }
             // .next {
@@ -571,6 +664,10 @@
                         line-height: 44px;
                     }
                 }
+            }
+            .text{
+                font-size: 22px;
+                line-height: 30px;
             }
         }
     }
@@ -709,6 +806,56 @@
                     ul{
                         li{
                             margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 1400px){
+        .services-and-cost-content{
+            .service-item{
+                .item {
+                    p{
+                        font-size: 18px;
+                    }
+                    ul{
+                        li{
+                            font-size: 18px;
+                            i{
+                                font-size: 18px;
+                            }
+                            strong{
+                                font-size: 18px;
+                            }
+                            span{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        .services-and-cost-content{
+            .service-item{
+                .item {
+                    p{
+                        font-size: 22px;
+                    }
+                    ul{
+                        li{
+                            font-size: 22px;
+                            i{
+                                font-size: 22px;
+                            }
+                            strong{
+                                font-size: 22px;
+                            }
+                            span{
+                                font-size: 18px;
+                            }
                         }
                     }
                 }
@@ -1710,7 +1857,7 @@
         
     }
     .faq-slider{
-        padding-bottom: 70px;
+        margin-bottom: 70px;
         .item{
             border: 1px solid  #E5E9EA;
             padding: 20px;
@@ -1757,10 +1904,66 @@
             opacity: 0.5;
         }
         .prev{
-            left: 0px;
+            left: -40px;
         }
         .next{
-            left: 65px;
+            left: 10px;
+        }
+    }
+    @media(min-width:1024px){
+        .faq-slider{
+            .item{
+                h4{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+        }
+        .slick-list{
+            padding-left: 40px;
+        }
+        .slick-arrow{
+            top: 48%;
+            z-index: 4;
+            bottom: initial;
+            transform: translate(0, -50%);
+        }
+        .next {
+            // left: 172px;
+        }
+        .prev {
+            // left: 115px;
+        }
+    }
+    @media(min-width: 1400px){
+        .faq-slider{
+            .item{
+                h4{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        .faq-slider{
+            .item{
+                padding: 46px 50px 46px 43px;
+                h4{
+                    font-size: 22px;
+                    margin-bottom: 29px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
         }
     }
 }

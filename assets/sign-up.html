@@ -22,8 +22,8 @@
         <div class="container">
             <ul>
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="javascript:void(0)">Пациентам</a></li>
-                <li><span>Стоимость услуг</span></li>
+                <li><a href="javascript:void(0)">О центре</a></li>
+                <li><span>Администрация центра</span></li>
             </ul>
         </div>
     </div>
@@ -38,51 +38,53 @@
             <span>Заполните форму ниже или закажите обратный звонок</span>
             <div class="wrapper">
                 <form action="">
-                    <select name="centre" id="">
-                        <option value disabled selected>Выберите центр</option>
-                        <option value="lorem">Lorem</option>
-                    </select>
-                    <select name="route" id="">
-                        <option value disabled selected>Выберите направление</option>
-                        <option value="lorem">Lorem</option>
-                    </select>
-                    <select name="doctor" id="">
-                        <option value disabled selected>Выберите врача</option>
-                        <option value="lorem">Lorem</option>
-                    </select>
-                    <select name="date" id="">
-                        <option value disabled selected>Дата приема</option>
-                        <option value="lorem">Lorem</option>
-                    </select>
-                    <select name="time" id="">
-                        <option value disabled selected>Время приема</option>
-                        <option value="lorem">Lorem</option>
-                    </select>
-                    <input type="text" name="name" placeholder="Имя и фамилия *">
-                    <input type="number" name="phone" placeholder="Номер телефона *">
-                    <label for="">
-                        <input type="checkbox">
-                    </label>
-                    
+                    <div class="select">
+                        <select name="centre" id="">
+                            <option value disabled selected>Выберите центр</option>
+                            <option value="lorem">Lorem</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="route" id="">
+                            <option value disabled selected>Выберите направление</option>
+                            <option value="lorem">Lorem</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="doctor" id="">
+                            <option value disabled selected>Выберите врача</option>
+                            <option value="lorem">Lorem</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="date" id="">
+                            <option value disabled selected>Дата приема</option>
+                            <option value="lorem">Lorem</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="time" id="">
+                            <option value disabled selected>Время приема</option>
+                            <option value="lorem">Lorem</option>
+                        </select>
+                    </div>
+                    <input class="input" type="text" name="name" placeholder="Имя и фамилия *">
+                    <input class="input" type="text" name="phone" placeholder="Номер телефона *">
+                    <label><input type="checkbox" checked>Я даю согласие на обработку <a href="javascript:void(0)">персональных данных.</a></label>
+                    <button>Отправить вопрос <i class="icon-arrow-button"></i></button>
                 </form>
                 <div class="tel">
                     <h3>Не хотите заполнять форму?</h3>
                     <span>Записаться на консультацию вы можете по телефону или заказав обратный звонок:</span>
-                    <a href="tel:7757" class="tel"><i class="icon-tel"></i>7757 (A1, MTC)</a>
+                    <a href="tel:7757" class="phone"><i class="icon-tel"></i>7757 (A1, MTC)</a>
                     <a href="javascript:void(0)" class="recording">Обратный звонок<i class="icon-arrow3"></i></a>
                   </div>
             </div>
         </div>
     </section>
 
-    <include src="assets/templates/medical-center-page.html"></include>
-
-    <include src="assets/templates/sign-up-now.html"></include>
-
     <include src="assets/templates/tagline.html"></include>
       
-    <include src="assets/templates/branches.html"></include>
-
     <include src="assets/templates/subscription.html"></include>
 
   </main>
@@ -95,8 +97,10 @@
   <script src="js/jquery.matchHeight.min.js"></script>
   <script src="js/accordion.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jcf.min.js"></script>
+  <script src="js/jcf.checkbox.min.js"></script>
   <script src="js/script.min.js"></script>
-  <script src="js/service-cost.min.js"></script>
+  <script src="js/sign-up.min.js"></script>
 
 </body>
 

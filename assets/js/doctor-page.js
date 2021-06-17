@@ -1,6 +1,6 @@
 $(function(){
     $('.about-doctor-content .text').showmore({
-        closedHeight: 330,
+        closedHeight: 300,
         buttonTextMore: 'Читать больше',
         buttonTextLess: 'Скрыть',
         buttonCssClass: 'showmore-button',
@@ -11,7 +11,7 @@ $(function(){
         rows: 1,
         infinite: false,
         slidesToScroll: 1,
-        slidesToShow: 1,
+        slidesToShow: 3.2,
         nextArrow: '<button class="slick-arrow next"><i class="icon-slick-next"></i></button>',
         prevArrow: '<button class="slick-arrow prev"><i class="icon-slick-prev"></i></button>',
         responsive: [
@@ -41,13 +41,13 @@ $(function(){
                 breakpoint: 1200,
                 settings: {
                     slidesToScroll: 1,
-                    slidesToShow: 3.6,
+                    slidesToShow: 2,
                 }
             },
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 2.5,
+                slidesToShow: 2,
                 slidesToScroll: 1,
               }
             },
@@ -67,11 +67,65 @@ $(function(){
         rows: 1,
         infinite: false,
         slidesToScroll: 1,
-        slidesToShow: 5,
+        slidesToShow: 4,
+        adaptiveHeight: true,
+        variableWidth: true,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-slick-next"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-slick-prev"></i></button>',
+        responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                }
+              },
+            {
+                breakpoint: 1280,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                }
+              },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            }
+        ]
+    });
+    $('.schedule-slider').slick({
+        rows: 1,
+        infinite: false,
+        slidesToScroll: 1,
+        slidesToShow: 6,
         adaptiveHeight: true,
         nextArrow: '<button class="slick-arrow next"><i class="icon-slick-next"></i></button>',
         prevArrow: '<button class="slick-arrow prev"><i class="icon-slick-prev"></i></button>',
         responsive: [
+            {
+                breakpoint: 1800,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                }
+            },
             {
                 breakpoint: 1600,
                 settings: {
@@ -80,18 +134,39 @@ $(function(){
                 }
             },
             {
+                breakpoint: 1400,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                }
+            },
+            {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
               }
             },
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
               }
+            },
+            {
+                breakpoint: 540,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                }
             }
         ]
     });
@@ -105,10 +180,10 @@ $(function(){
         console.log(tab)
         $('.about-doctor-content').find('.' + tab).addClass('active-tab')
         $('.diplomas-slider').slick('setPosition');
+        $('.schedule-slider').slick('setPosition');
     });
 
     if($(window).width() >= 1200){
-
         $('.publication-content').slick({
             rows: 1,
             infinite: false,
