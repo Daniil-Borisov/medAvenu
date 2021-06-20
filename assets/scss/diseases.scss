@@ -1,0 +1,263 @@
+@import 'libs/slick';
+@import 'libs/branches';
+@import 'libs/tagline';
+@import 'libs/subscription';
+
+.title{
+    margin-bottom: 30px;
+    h1{
+        margin-top: 0;
+        display: block;
+        font-size: 30px;
+        color: #000000;            
+        line-height: 35px;
+        font-weight: normal;
+        font-family: 'GT Eesti Pro Display Regular';
+    }
+    @media(min-width: 540px){
+        margin-right: 30%;
+    }
+    @media(min-width: 1024px){
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: 42px;
+    }
+    @media(min-width: 1200px){
+        margin-bottom: 49px;
+    }
+    @media(min-width: 1400px){
+        h1 {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+    @media(min-width: 1600px){
+        margin-left: 4px;
+        margin-bottom: 70px;
+        h1 {
+            font-size: 60px;
+            line-height: 70px;
+        }
+    }
+    @media(min-width: 1800px){
+        margin-bottom: 77px;
+    }
+
+}
+
+.diseases{
+    .search-filter{
+        form{
+            position: relative;
+            margin-bottom: 22px;
+            button{
+                left: 0;
+                top: 50%;
+                z-index: 3;
+                border: none;
+                opacity: 0.3;
+                cursor: pointer;
+                font-size: 20px;
+                color: #313C42;
+                position: absolute;
+                background: transparent;
+                transform: translate(0, -50%);
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            input{
+                z-index: 0;
+                width: 100%;
+                height: 57px;
+                border: none;
+                font-size: 14px;
+                font-weight: 300;
+                color: #0F1728;
+                line-height: 20px;
+                padding: 0 20px 0 38px;
+                border-bottom: 1px solid #E3E8EA;
+            }
+            input::placeholder{
+                opacity: 0.2;
+                color: #0F1728;
+            }
+        }
+        .filter{
+            .filter-wrapper{
+                display: flex;
+            }
+            .route, .department,.letter{
+                display: flex;
+                flex-direction: column;
+                p{
+                    font-family: 'GT Eesti Pro Display Regular';
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #81939A;
+                    margin-bottom: 7px;
+                }
+                span, li{
+                    font-family: 'GT Eesti Pro Display Regular';
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    width: fit-content;
+                    color: #00B6EF;
+                    padding-right: 20px;
+                    position: relative;
+                    &::before{
+                        content: '\e803';
+                        font-size: 7px;
+                        top: 46%;
+                        right: 5px;
+                        color: #00B6EF;
+                        position: absolute;
+                        font-family: 'fontello';
+                        transform: translate(0, -50%);
+                        transition: all 0.3s;
+                    }
+                }
+                ul{
+                    display: flex;
+                    li{
+                        margin-right: 15px;
+                        padding: 0;
+                    }
+                }
+            }
+            .route{
+                margin-right: 30px;
+            }
+            .letter{
+                display: none;
+            }
+            @media(min-width: 1024px){
+                .route, .department{
+                    flex-direction: row;
+                    p{
+                        font-size: 15px;
+                        line-height: 17px;
+                        margin-right: 7px;
+                    }
+                    span{
+                        font-size: 15px;
+                        line-height: 17px;
+                        &::before{
+                            transform: translate(0, -75%);
+                        }
+                    }
+                } 
+            }
+            @media(min-width:1400px){
+                .route{
+                    margin-right: 50px;
+                }
+                .letter{
+                    display: flex;
+                    li{
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+                .department{
+                    display: none;
+                }
+            }
+            @media(min-width:1600px){
+                .route{
+                    margin-right: 67px;
+                }
+                .route,.department{
+                    p{
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .diseases-list{
+        padding: 44px 0 30px;
+        .letter-list{
+            display: flex;
+            margin-bottom: 40px;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+            span{
+                font-size: 36px;
+                line-height: 40px;
+                color: #00B6EF;
+                margin-right: 27px;
+            }
+            ul{
+                padding-top: 10px;
+                li{
+                    margin-bottom: 15px;
+                    a{
+                        font-family: 'GT Eesti Pro Display Regular';
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+        @media(min-width: 768px){
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .letter-list{
+                width: 48%;
+            }
+        }
+        @media(min-width: 1024px){
+            .letter-list{
+                width: 48%;
+                ul{
+                    li{
+                        a{
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        @media(min-width: 1200px){}
+        @media(min-width: 1400px){
+            .letter-list{
+                width: 30%;
+                ul{
+                    li{
+                        a{
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        @media(min-width: 1600px){
+            .letter-list{
+                margin-bottom: 50px;
+                ul{
+                    li{
+                        margin-bottom: 20px;
+                        a{
+                            font-size: 22px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

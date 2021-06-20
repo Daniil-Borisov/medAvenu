@@ -1,0 +1,735 @@
+@import 'libs/slick';
+@import 'libs/sign-up-now';
+@import 'libs/promotions';
+@import 'libs/tagline';
+@import 'libs/branches';
+@import 'libs/subscription';
+
+.title{
+    margin-bottom: 30px;
+    h1{
+        margin-top: 0;
+        display: block;
+        font-size: 30px;
+        color: #000000;            
+        line-height: 35px;
+        font-weight: normal;
+        font-family: 'GT Eesti Pro Display Regular';
+    }
+    @media(min-width: 540px){
+        margin-right: 30%;
+    }
+    @media(min-width: 1024px){
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: 42px;
+    }
+    @media(min-width: 1200px){
+        margin-bottom: 49px;
+    }
+    @media(min-width: 1400px){
+        h1 {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+    @media(min-width: 1600px){
+        margin-left: 4px;
+        margin-bottom: 70px;
+        h1 {
+            font-size: 60px;
+            line-height: 70px;
+        }
+    }
+    @media(min-width: 1800px){
+        margin-bottom: 77px;
+    }
+
+}
+
+.promotion{
+    .promotion-content{
+        .promotions-item{
+            position: relative;
+            margin-bottom: 29px;
+            &:nth-of-type(n+4){
+                display: none;
+            }
+            .logo{
+                position: absolute;
+                top: 18px;
+                right: 18px;
+                width: 60px;
+                z-index: 10;
+            }
+            .img{
+                position: relative;
+                margin-bottom: 20px;
+                .discount-timer{
+                    top: 14px;
+                    left: 12px;
+                    z-index: 3;
+                    display: flex;
+                    position: absolute;
+                    align-items: center;
+                    .discount{
+                        font-size: 12px;
+                        color: #FFFFFF;
+                        line-height: 17px;
+                        margin-right: 8px;
+                        border-radius: 30px;
+                        padding: 4px 8px 2px;
+                        text-transform: uppercase;
+                        border: 1px solid #FFFFFF;
+                        font-family: 'GT Eesti Pro Display Regular';
+                    }
+                    .timer{
+                        display: flex;
+                        font-size: 12px;
+                        color: #81939A;
+                        line-height: 17px;
+                        border-radius: 50px;
+                        align-items: center;
+                        background: #FFFFFF;
+                        padding: 4px 12px 2px 8px;
+                        i{
+                            font-size: 10px;
+                            color: #81939A;
+                            margin-right: 5px;
+                            display: inline-block;
+                        }
+                    }
+                }
+                .ellipse{
+                    width: 67%;
+                    display: flex;
+                    padding: 50px 0 0 20px;
+                }
+                .img-with-text{
+                    position: relative;
+                    .description{
+                        span{
+                            font-size: 16px;
+                            width: 70px;
+                            height: 70px;
+                            background-color: #FFFFFF;
+                            border-radius: 50%;
+                            font-family: 'GT Eesti Pro Display Regular';
+                            display: flex;  
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 32%;
+                            left: 58%;
+                            &::after{
+                                width:120px;
+                                height: 120px;
+                                border: 1px solid #fff;
+                                border-radius: 50%;
+                                content: '';
+                                display: inline-block;
+                                position: absolute;
+                                opacity: 0.3;
+                            }
+
+                        }
+                        p{
+                            position: absolute;
+                            color: #FFFFFF;
+                            width: 49%;
+                            top: 76%;
+                            left: 55%;
+                            font-family: 'GT Eesti Pro Display Regular';
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+            .text{
+                h4{
+                    font-size: 14px;
+                    color: #0F1728;
+                    line-height: 20px;
+                    margin-bottom: 17px;
+                    font-weight: 300;
+                }
+                p{
+                    display: flex;
+                    font-size: 14px;
+                    color: #00B6EF;
+                    font-weight: 300;
+                    line-height: 20px;
+                    align-items: center;
+                    i{
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: #81939A;
+                        line-height: 20px;
+                        padding: 2px 7px;
+                        margin-right: 10px;
+                        border-radius: 30px;
+                        display: inline-block;
+                        border: 1px solid #81939A;
+                    }
+                    span{
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: #81939A;
+                        line-height: 20px;
+                        margin-right: 12px;
+                        display: inline-block;
+                        text-decoration-line: line-through;
+                    }
+                }
+            }
+            a{
+                margin-top: 20px;
+                display: inline-block;
+                padding: 15px 47px 15px 45px;
+                background-color: #00B6EF;
+                color: #fff;
+                border-radius: 91px;
+                font-size: 14px;
+                line-height: 20px; 
+                i{
+                    font-size: 20px;
+                }
+                &:hover{
+                    background-color: #2980B9;
+                } 
+            }
+        }
+        .red-bg{
+            background-color: #D8554E;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #D8554E;
+                    }
+                }
+            } 
+        }
+        .sky-blue-bg{
+            background-color: #00b7ef;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #00b7ef;
+                    }
+                }
+            }
+        }
+        .blue-bg{
+            background-color: #15518f;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #15518f;
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width:1024px){
+        .promotions-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .img{
+                width: 50%;
+                order: 2;
+            }
+            .text{
+                width: 48%;
+            }
+        }
+    }
+    @media(min-width:1200px){
+        .title{
+            width: 40%;
+            margin-bottom: -80px;
+        }
+        .promotion-content{
+            .promotions-item{
+                .img{
+                    .ellipse{
+                        width: 62%;
+                        padding: 100px 0 0 50px;
+                    }
+                    .discount-timer {
+                        top: 24px;
+                        left: 25px;
+                    }
+                    .img-with-text{
+                        .description{
+                            span{
+                                left: 55%;
+                                width: 110px;
+                                height: 110px;
+                                font-size: 24px;
+                                &::after{
+                                    width: 204px;
+                                    height: 204px;
+                                }
+                            }
+                            p{
+                                width: 30%;
+                                font-size: 18px;
+
+                            }
+                        }
+                    }
+                }
+                .logo{
+                    top: 24px;
+                    right: 25px;
+                }
+                .text{
+                    h4{
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 1400px){
+        .title{
+            margin-bottom: -105px;
+
+        }
+        .promotion-content{
+            .promotions-item{
+                .text{
+                    h4{
+                        margin-top: 60px;
+                        margin-bottom: 50px;
+                        font-size: 18px;
+                        line-height: 26px;
+                        width: 80%;
+                    }
+                    p{
+                        font-size: 22px;
+                        span{
+                            font-size: 22px;
+                        }
+                    }
+                    a{
+                        margin-top: 60px;
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                }
+                .logo{
+                    width: 130px;
+                    top: 30px;
+                    right: 30px;
+                }
+                .img{
+                    .ellipse{
+                        width: 62%;
+                        padding: 120px 0 0 50px;
+                    }
+                    .discount-timer {
+                        top: 30px;
+                        left: 30px;
+                        .discount {
+                            font-size: 14px;
+                            line-height: 19px;
+                            padding: 4px 10px 2px;
+                        }
+                        .timer {
+                            font-size: 14px;
+                            line-height: 19px;
+                            padding: 4px 12px 3px 8px;
+                            i {
+                                font-size: 16px;
+                                margin-right: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        .title{
+            margin-bottom: -160px;
+            width: 48%;
+        }
+        .promotion-content{
+            .promotions-item{
+                .text{
+                    h4{
+                        font-size: 22px;
+                        line-height: 30px;
+                        margin-bottom: 60px;
+                    }
+
+                }
+                .img{
+                    .discount-timer {
+                        top: 30px;
+                        left: 30px;
+                    }
+                    .img-with-text{
+                        .description{
+                            span{
+                                left: 55%;
+                                width: 130px;
+                                height: 130px;
+                                font-size: 30px;
+                                &::after{
+                                    width: 234px;
+                                    height: 234px;
+                                }
+                            }
+                            p{
+                                font-size: 30px;
+                                line-height: 40px;
+                                width: 40%;
+                                top: 75%;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    @media(min-width:1800px){
+        .promotion-content{
+            .promotions-item{
+                .logo{
+                    top: 40px;
+                    right: 40px;
+                }
+                .img{
+                    .discount-timer {
+                        top: 40px;
+                        left: 40px;
+                        .discount {
+                            font-size: 18px;
+                            line-height: 20px;
+                            margin-right: 12px;
+                            padding: 4px 14px 2px;
+                        }
+                        .timer {
+                            font-size: 18px;
+                            line-height: 20px;
+                            padding: 4px 12px 3px 8px;
+                            i {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.promotion-description{
+    .title{
+        margin-bottom: 25px;
+        h2{
+            font-size: 24px;
+            line-height: 28px;
+            color: #000;
+        }
+    }
+    .text{
+        p{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 15px;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media(min-width: 1024px){
+        .title{
+            h2{
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        .text{
+            p{
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+    @media(min-width: 1200px){
+        padding: 60px 0;
+        .title{
+            h2{
+                font-size: 36px;
+                margin-bottom: 40px;
+            }
+        }
+        .text{
+            p{
+                font-size: 18px;
+                line-height: 26px;
+                width: 90%;
+            }
+        }
+    }
+    @media(min-width: 1400px){
+        .title{
+            h2{
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+        }
+        .text{
+            p{
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        .title{
+            h2{
+                font-size: 48px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+.services-and-cost{
+    padding: 50px 0 0;
+    .title{
+        margin-bottom: 25px;
+        h2{
+            font-size: 24px;
+            line-height: 28px;
+            color: #000;
+        }
+        
+    }
+    .services-and-cost-content{
+        .currencies{
+            display: flex;
+            align-items: center;
+            li{
+                a{
+                    font-size: 14px;
+                    color: #81939A;
+                    padding: 3px 7px;
+                    line-height: 16px;
+                    display: inline-block;
+                    border: 1px solid #DFEFF4;
+                    font-family: 'GT Eesti Pro Display Regular';
+                    transition: all 0.4s;
+                    &:hover{
+                        color: #00B6EF;
+                    }
+                }
+            }
+            li.active{
+                a{
+                    color: #fff;
+                    background: #00B6EF;
+                    border: 1px solid #00B6EF;
+                }
+            }
+        }
+        .service-item{
+            margin: 25px 0;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            h5{
+                font-size: 14px;
+                color: #0F1728;
+                line-height: 16px;
+                font-weight: normal;
+                margin-bottom: 13px;
+                font-family: 'GT Eesti Pro Display Regular';
+            }
+            .item{
+                position: relative;
+                padding: 14px 14px 7px;
+                border: 1px solid #E5E9EA;
+                margin-top: -1px;
+                a{
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
+                p{
+                    font-size: 14px;
+                    color: #000000;
+                    line-height: 16px;
+                    font-weight: normal;
+                    margin-bottom: 14px;
+                    font-family: 'GT Eesti Pro Display Regular';
+                }
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    li{
+                        margin-right: 13px;
+                        margin-bottom: 9px;
+                        font-size: 16px;
+                        line-height: 19px;
+                        font-weight: 600;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        i{
+                            font-size: 16px;
+                            color: #81939A;
+                            line-height: 19px;
+                            font-weight: normal;
+                            text-decoration-line: line-through;
+                            font-family: 'GT Eesti Pro Display Regular';
+                        }
+                        strong{
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #D8554E;
+                            line-height: 19px;
+                            font-family: 'GT Eesti Pro Display Medium';
+                        }
+                        span{
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: #D8554E;
+                            padding: 2px 7px;
+                            line-height: 20px;
+                            border-radius: 5px;
+                            background: #FFF2F1;
+                            display: inline-block;
+                            font-family: 'GT Eesti Pro Display Medium';
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width:1200px){
+        .title{
+            h2{
+                margin-bottom: -50px;
+                font-size: 36px;
+            }
+        }
+        .services-and-cost-content{
+            .currencies{
+                justify-content: flex-end;
+            }
+            .service-item{
+                margin-top: 35px;
+                .item {
+                    display: flex;
+                    align-items: center;
+                    padding: 18px 20px 18px;
+                    justify-content: space-between;
+                    p {
+                        width: 50%;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                        line-height: 20px;
+                    }
+                    ul{
+                        li{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 1400px){
+        .title{
+            h2{
+                font-size: 40px;
+
+            }
+        }
+        .services-and-cost-content{
+            .currencies{
+                li{
+                    a{
+                        font-size: 18px;
+                        padding: 6px 12px;
+                    }
+                }
+            }
+            .service-item{
+                margin-top: 50px;
+                .item {
+                    p{
+                        font-size: 18px;
+                    }
+                    ul{
+                        li{
+                            font-size: 18px;
+                            i{
+                                font-size: 18px;
+                            }
+                            strong{
+                                font-size: 18px;
+                            }
+                            span{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        .title{
+            h2{
+                font-size: 48px;
+            }
+        }
+        .services-and-cost-content{
+            .currencies{
+                li{
+                    a{
+                        font-size: 20px;
+                        padding: 8px 16px;
+                    }
+                }
+            }
+            .service-item{
+                margin-top: 70px;
+                .item {
+                    p{
+                        font-size: 22px;
+                    }
+                    ul{
+                        li{
+                            font-size: 22px;
+                            i{
+                                font-size: 22px;
+                            }
+                            strong{
+                                font-size: 22px;
+                            }
+                            span{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,494 @@
+.promotions {
+    padding: 24px 0 25px;
+    .promotions-content{
+        .red-bg{
+            background-color: #D8554E;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #D8554E;
+                    }
+                }
+            } 
+        }
+        .sky-blue-bg{
+            background-color: #00b7ef;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #00b7ef;
+                    }
+                }
+            }
+        }
+        .blue-bg{
+            background-color: #15518f;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #15518f;
+                    }
+                }
+            }
+        }
+        .promotions-item{
+            position: relative;
+            margin-bottom: 29px;
+            &:hover{
+                .text{
+                    h4{
+                        color: #00B6EF;
+                    }
+                }
+            }
+            &:nth-of-type(n+4){
+                display: none;
+            }
+            a{
+                top: 0;
+                left: 0;
+                z-index: 3;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            .logo{
+                position: absolute;
+                top: 18px;
+                right: 18px;
+                width: 60px;
+                z-index: 10;
+            }
+            .img{
+                position: relative;
+                margin-bottom: 20px;
+                .discount-timer{
+                    top: 14px;
+                    left: 12px;
+                    z-index: 3;
+                    display: flex;
+                    position: absolute;
+                    align-items: center;
+                    .discount{
+                        font-size: 12px;
+                        color: #FFFFFF;
+                        line-height: 17px;
+                        margin-right: 8px;
+                        border-radius: 30px;
+                        padding: 4px 8px 2px;
+                        text-transform: uppercase;
+                        border: 1px solid #FFFFFF;
+                        font-family: 'GT Eesti Pro Display Regular';
+                    }
+                    .timer{
+                        display: flex;
+                        font-size: 12px;
+                        color: #81939A;
+                        line-height: 17px;
+                        border-radius: 50px;
+                        align-items: center;
+                        background: #FFFFFF;
+                        padding: 4px 12px 2px 8px;
+                        i{
+                            font-size: 10px;
+                            color: #81939A;
+                            margin-right: 5px;
+                            display: inline-block;
+                        }
+                    }
+                }
+                img{
+                    width: 67%;
+                    display: flex;
+                    padding: 50px 0 0 20px;
+                }
+                .img-with-text{
+                    position: relative;
+                    .description{
+                        span{
+                            font-size: 16px;
+                            width: 70px;
+                            height: 70px;
+                            background-color: #FFFFFF;
+                            border-radius: 50%;
+                            font-family: 'GT Eesti Pro Display Regular';
+                            display: flex;  
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 32%;
+                            left: 58%;
+                            &::after{
+                                width:120px;
+                                height: 120px;
+                                border: 1px solid #fff;
+                                border-radius: 50%;
+                                content: '';
+                                display: inline-block;
+                                position: absolute;
+                                opacity: 0.3;
+                            }
+
+                        }
+                        p{
+                            position: absolute;
+                            color: #FFFFFF;
+                            width: 49%;
+                            top: 76%;
+                            left: 55%;
+                            font-family: 'GT Eesti Pro Display Regular';
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+            .text{
+                margin-right: 30%;
+                h4{
+                    font-size: 16px;
+                    color: #0F1728;
+                    line-height: 22px;
+                    margin-bottom: 17px;
+                    transition: all 0.5s;
+                }
+                p{
+                    display: flex;
+                    font-size: 14px;
+                    color: #00B6EF;
+                    font-weight: 300;
+                    line-height: 20px;
+                    align-items: center;
+                    i{
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: #81939A;
+                        line-height: 20px;
+                        padding: 2px 7px;
+                        margin-right: 10px;
+                        border-radius: 30px;
+                        display: inline-block;
+                        border: 1px solid #81939A;
+                    }
+                    span{
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: #81939A;
+                        line-height: 20px;
+                        margin-right: 12px;
+                        display: inline-block;
+                        text-decoration-line: line-through;
+                    }
+                }
+            }
+        }
+    }
+    .all-promotions{
+        width: 135px;
+        height: 50px;
+        display: flex;
+        font-size: 14px;
+        color: #00B6EF;
+        line-height: 20px;
+        border-radius: 73px;
+        align-items: center;
+        transition: all 0.3s;
+        justify-content: center;
+        border: 1px solid #00B6EF;
+        font-family: 'GT Eesti Pro Display Regular';
+        i{
+            font-size: 20px;
+            color: #00B6EF;
+            margin-left: 5px;
+            display: inline-block;
+            transform: translate(7px, 0);
+            transition: all 0.3s;
+        }
+        &:hover{
+            color: #fff;
+            background: #00B6EF;
+            i{
+                color: #fff;
+            }
+        }
+    }
+    @media (min-width: 540px) {
+        .title{
+            margin-right: 30%;
+        }
+        .promotions-content {
+            .promotions-item {
+                .img {
+                    .discount-timer {
+                        top: 20px;
+                        left: 20px;
+                    }
+                }
+                .text {
+                    margin-right: 10%;
+                }
+            }
+        }
+    }
+    @media (min-width: 768px){
+        .promotions-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .promotions-item{
+                width: 50%;
+                &:nth-of-type(n+5){
+                    display: none;
+                }
+                .img{
+                    border-right: 1px solid #FFFFFF;
+                    .discount-timer {
+                        top: 9px;
+                        left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 35px 0 35px;
+        .title {
+            width: 70%;
+            margin-right: 0;
+            margin-bottom: 42px;
+        }
+        .promotions-content {
+            margin-bottom: 11px;
+            .promotions-item {
+                .img {
+                    margin-bottom: 22px;
+                }
+                .text {
+                    margin-right: 25%;
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 38px 0 25px;
+        .title {
+            margin-bottom: 49px;
+        }
+        .promotions-content {
+            margin-bottom: 0;
+            .promotions-item {
+                width: 33.33%;
+                margin-bottom: 45px;
+                &:nth-of-type(n+4){
+                    display: block;
+                }
+                .img {
+                    margin-bottom: 20px;
+                    .discount-timer {
+                        top: 14px;
+                        left: 15px;
+                    }
+                }
+                .text {
+                    margin-right: 28%;
+                }
+            }
+        }
+        .all-promotions{
+            top: -7px;
+            z-index: 3;
+            right: 100px;        
+            position: absolute;
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 48px 0 30px;
+        .title{
+            h2 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+        .promotions-content {
+            .promotions-item {
+                .img {
+                    border: none;
+                    margin-bottom: 22px;
+                    &::after{
+                        content: '';
+                        top: 0;
+                        width: 2px;
+                        z-index: 2;
+                        right: -1px;
+                        height: 100%;
+                        position: absolute;
+                        background: #fff;
+                    }
+                    .discount-timer {
+                        top: 16px;
+                        left: 16px;
+                        .discount {
+                            font-size: 14px;
+                            line-height: 19px;
+                            padding: 4px 10px 2px;
+                        }
+                        .timer {
+                            font-size: 14px;
+                            line-height: 19px;
+                            padding: 4px 12px 3px 8px;
+                            i {
+                                font-size: 16px;
+                                margin-right: 9px;
+                            }
+                        }
+                    }
+                    
+                }
+                .text{
+                    h4 {
+                        font-size: 18px;
+                        line-height: 26px;
+                        margin-bottom: 9px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 22px;
+                        i {
+                            font-size: 16px;
+                            padding: 2px 9px;
+                            line-height: 22px;
+                            margin-right: 14px;
+                        }
+                        span{
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        .all-promotions {
+            top: 0;
+            right: 100px;
+            width: 148px;
+            font-size: 16px;
+            i {
+                font-size: 22px;
+                margin-left: 3px;
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        padding: 70px 0 50px;
+        .title {
+            margin-left: 4px;
+            margin-bottom: 70px;
+            h2 {
+                font-size: 60px;
+                line-height: 70px;
+            }
+        }
+        .promotions-content {
+            .promotions-item {
+                margin-bottom: 73px;
+                .img {
+                    margin-bottom: 29px;
+                    .discount-timer {
+                        top: 20px;
+                        left: 25px;
+                    }
+                    .img-with-text{
+                        img{
+                            width: 350px;
+                            padding:93px 0 0 30px
+                        }
+                        .description{
+                            span{
+                                left: 55%;
+                                width: 100px;
+                                height: 100px;
+                                font-size: 24px;
+                                &::after{
+                                    width: 174px;
+                                    height: 174px;
+                                }
+                            }
+                            p{
+                                font-size: 24px;
+                                line-height: 34px;
+                                width: 45%;
+                                top: 70%;
+                            }
+                        }
+                    }
+                }
+                .text {
+                    margin-right: 20%;
+                    h4{
+                        font-size: 24px;
+                        line-height: 34px;
+                        margin-bottom: 25px;
+                    }
+                    p{
+                        font-size: 20px;
+                        line-height: 28px;
+                        i{
+                            font-size: 20px;
+                            padding: 1px 9px;
+                            line-height: 28px;
+                            margin-right: 12px;
+                        }
+                        span{
+                            font-size: 20px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+        .all-promotions {
+            top: 6px;
+            right: 60px;
+            width: 230px;
+            height: 64px;
+            font-size: 22px;
+            i {
+                font-size: 24px;
+                margin-left: 5px;
+            }
+        }
+    }
+    @media (min-width: 1800px) {
+        padding: 60px 0 60px;
+        .title {
+            margin-bottom: 77px;
+        }
+        .promotions-content {
+            .promotions-item {
+                .img {
+                    .discount-timer {
+                        top: 24px;
+                        left: 26px;
+                        .discount {
+                            font-size: 16px;
+                            line-height: 20px;
+                            margin-right: 12px;
+                            padding: 4px 14px 2px;
+                        }
+                        .timer {
+                            font-size: 16px;
+                            line-height: 20px;
+                            padding: 4px 12px 3px 8px;
+                            i {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .all-promotions {
+            top: 8px;
+            right: 125px;
+        }
+    }
+}
