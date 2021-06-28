@@ -10,22 +10,21 @@ $(function(){
             {
                 breakpoint: 1800,
                 settings: {
-                    rows: 1,
-                    slidesToShow: 3.2,
+                    slidesToShow: 3.13,
                     slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 1600,
                 settings: {
-                    slidesToShow: 3.65,
+                    slidesToShow: 3.25,
                     slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 1400,
                 settings: {
-                    slidesToShow: 3.4,
+                    slidesToShow: 3.3,
                     slidesToScroll: 1,
                 }
             },
@@ -33,13 +32,13 @@ $(function(){
                 breakpoint: 1200,
                 settings: {
                     slidesToScroll: 1,
-                    slidesToShow: 3.6,
+                    slidesToShow: 3.12,
                 }
             },
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 2.5,
+                slidesToShow: 3.2,
                 slidesToScroll: 1,
               }
             },

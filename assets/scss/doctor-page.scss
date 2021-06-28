@@ -1584,21 +1584,6 @@
         }
         .publication-content {
             margin-bottom: 34px;
-            .slick-list{
-                padding-left: 40px;
-            }
-            .slick-arrow{
-                top: 48%;
-                z-index: 4;
-                bottom: initial;
-                transform: translate(0, -50%);
-            }
-            .next {
-                // left: 172px;
-            }
-            .prev {
-                // left: 115px;
-            }
             .publication-item {
                 .img {
                     margin-bottom: 14px;
@@ -1640,21 +1625,8 @@
         }
         .publication-content {
             margin-bottom: 0;
-            .slick-list {
-                padding-left: 100px;
-            }
-            .slick-arrow{
-                top: 50%;
-            }
-            .prev {
-                left: 22px;
-            }
-            .next {
-                left: 78px;
-            }
             .publication-item {
                 width: 33.33%;
-                margin-bottom: 0;
                 .img {
                     margin-bottom: 9px;
                     ul{

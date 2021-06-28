@@ -537,19 +537,37 @@
 
 .promotions {
     padding: 24px 0 25px;
-    .title{
-        margin-bottom: 30px;
-        h2{
-            margin-top: 0;
-            display: block;
-            font-size: 30px;
-            color: #000000;            
-            line-height: 35px;
-            font-weight: normal;
-            font-family: 'GT Eesti Pro Display Regular';
-        }
-    }
     .promotions-content{
+        .red-bg{
+            background-color: #D8554E;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #D8554E;
+                    }
+                }
+            } 
+        }
+        .sky-blue-bg{
+            background-color: #00b7ef;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #00b7ef;
+                    }
+                }
+            }
+        }
+        .blue-bg{
+            background-color: #15518f;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #15518f;
+                    }
+                }
+            }
+        }
         .promotions-item{
             position: relative;
             margin-bottom: 29px;
@@ -560,6 +578,9 @@
                     }
                 }
             }
+            &:nth-of-type(n+4){
+                display: none;
+            }
             a{
                 top: 0;
                 left: 0;
@@ -567,6 +588,13 @@
                 width: 100%;
                 height: 100%;
                 position: absolute;
+            }
+            .logo{
+                position: absolute;
+                top: 18px;
+                right: 18px;
+                width: 60px;
+                z-index: 10;
             }
             .img{
                 position: relative;
@@ -599,16 +627,56 @@
                         background: #FFFFFF;
                         padding: 4px 12px 2px 8px;
                         i{
-                            font-size: 14px;
+                            font-size: 10px;
                             color: #81939A;
-                            margin-right: 7px;
+                            margin-right: 5px;
                             display: inline-block;
                         }
                     }
                 }
                 img{
-                    width: 100%;
+                    width: 67%;
                     display: flex;
+                    padding: 50px 0 0 20px;
+                }
+                .img-with-text{
+                    position: relative;
+                    .description{
+                        span{
+                            font-size: 16px;
+                            width: 70px;
+                            height: 70px;
+                            background-color: #FFFFFF;
+                            border-radius: 50%;
+                            font-family: 'GT Eesti Pro Display Regular';
+                            display: flex;  
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 32%;
+                            left: 58%;
+                            &::after{
+                                width:120px;
+                                height: 120px;
+                                border: 1px solid #fff;
+                                border-radius: 50%;
+                                content: '';
+                                display: inline-block;
+                                position: absolute;
+                                opacity: 0.3;
+                            }
+
+                        }
+                        p{
+                            position: absolute;
+                            color: #FFFFFF;
+                            width: 49%;
+                            top: 76%;
+                            left: 55%;
+                            font-family: 'GT Eesti Pro Display Regular';
+                            line-height: 22px;
+                        }
+                    }
                 }
             }
             .text{
@@ -705,7 +773,7 @@
             align-items: center;
             .promotions-item{
                 width: 50%;
-                &:last-child{
+                &:nth-of-type(n+5){
                     display: none;
                 }
                 .img{
@@ -746,7 +814,8 @@
             margin-bottom: 0;
             .promotions-item {
                 width: 33.33%;
-                &:last-child{
+                margin-bottom: 45px;
+                &:nth-of-type(n+4){
                     display: block;
                 }
                 .img {
@@ -809,6 +878,7 @@
                             }
                         }
                     }
+                    
                 }
                 .text{
                     h4 {
@@ -856,11 +926,36 @@
         }
         .promotions-content {
             .promotions-item {
+                margin-bottom: 73px;
                 .img {
                     margin-bottom: 29px;
                     .discount-timer {
                         top: 20px;
                         left: 25px;
+                    }
+                    .img-with-text{
+                        img{
+                            width: 350px;
+                            padding:93px 0 0 30px
+                        }
+                        .description{
+                            span{
+                                left: 55%;
+                                width: 100px;
+                                height: 100px;
+                                font-size: 24px;
+                                &::after{
+                                    width: 174px;
+                                    height: 174px;
+                                }
+                            }
+                            p{
+                                font-size: 24px;
+                                line-height: 34px;
+                                width: 45%;
+                                top: 70%;
+                            }
+                        }
                     }
                 }
                 .text {
@@ -1004,7 +1099,7 @@
                     line-height: 23px;
                     color: #000;
                     font-weight: 600;
-                    padding: 13px 50px 13px 19px;
+                    padding: 13px 40px 13px 19px;
                     border: 1px solid #00B6EF;
                     border-radius: 73px;
                     margin: 23px 0;
@@ -1024,7 +1119,7 @@
                 }
                 .call-doctor{
                     display: inline-block;
-                    padding: 16px 30px 0px 45px;
+                    padding: 16px 28px 0px 45px;
                     color: #00B6EF;
                     font-size: 14px;
                     line-height: 20px;
@@ -1207,24 +1302,55 @@
                     }
                 }
                 .equipment-item{
+                    padding: 25px 0;
                     .title{
                         h3{
                             margin-bottom: 10px;
+                            font-size: 24px;
+                            line-height: 28px;
+                            color: #000000;
                         }
                         span{
                             font-size: 16px;
                             color: #00B6EF;
                         }
+                        
                     }
                     .slider{
+                        padding-bottom: 60px;
                         margin-bottom: 30px;
                         img{
                             width: 100%;
                             height: auto;
                         }
+                        .video{
+                            position: relative;
+                        }
+                        .video-play{
+                            bottom: 20px;
+                            z-index: 1;
+                            right: 20px;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            position: absolute;
+                            background: #00B6EF;
+                            cursor: pointer;
+                            &:hover{
+                                background: #2980B9;
+                            }
+                            i{
+                                top: 52%;
+                                left: 56%;
+                                color: #fff;
+                                font-size: 18px;
+                                position: absolute;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
                         .slick-arrow{
                             left: 0;
-                            bottom: -10%;
+                            bottom: 0%;
                             width: 46px;
                             height: 46px;
                             cursor: pointer;
@@ -1258,6 +1384,49 @@
                         }
                         .next{
                             left: 65px;
+                        }
+                    }
+                    .text{
+                        p{
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #0F1728;
+                        }
+                        ul{
+                            li{
+                                font-weight: 300;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #0F1728;
+                                padding-left: 15px;
+                                position: relative;
+                                margin-bottom: 10px;
+                                &:before{
+                                    width: 6px;
+                                    height: 6px;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0px;
+                                    transform: translate(0, -65%);
+                                    border-radius: 50%;
+                                    background: #00B6EF;
+                                    content: '';
+                                }
+                            }
+                        }
+                        a{
+                            display: inline-block;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #FFFFFF;
+                            background: #00B6EF;
+                            border-radius: 91px;   
+                            padding: 6px 18px 4px; 
+                            margin-top: 25px;
+                            &:hover{
+                                background-color:#2980B9;
+                            }
                         }
                     }
                 }
@@ -1307,6 +1476,55 @@
             }
             .content{
                 .tab{
+                    .equipment-item{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        border-top: 2px solid #E5E9EA;
+                        padding: 30px 0;
+                        .title{
+                            width: 50%;
+                            h3{
+                                font-size: 28px;
+                            }
+                            span{
+                                font-size: 18px;
+                            }
+                            .subtitle{
+                                p{
+                                    font-size: 16px;
+                                    line-height: 1.4;
+                                }
+                            }
+                        }
+                        .item-wrapper{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            .text{
+                                width: 48%;
+                                p{
+                                    font-size: 16px;
+                                    line-height: 1.4;
+                                }
+                                a{
+                                    font-size: 16px;
+                                    line-height: 1.4;
+                                }
+                                ul{
+                                    li{
+                                        font-size: 16px;
+                                        line-height: 1.4;
+                                    }
+                                }
+            
+                            }
+                            .slider-wrapper{
+                                width: 48%;
+                                order: 2;
+                            }
+                        }
+                    }
                     .list{
                         ul{
                             li{
@@ -1318,13 +1536,13 @@
             }
         }
     }
-    @media(min-width: 1400px){
+    @media(min-width: 1200px){
         .content-wrapper{
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
             .info{
-                width: 30%;
+                width: 280px;
                 margin: 0;
                 display: block;
                 .share, .tel{
@@ -1332,7 +1550,7 @@
                 }
             }
             .content{
-                width: 65%;
+                width: 70%;
                 .tabs {
                     li {
                         margin-right: 40px;
@@ -1350,56 +1568,198 @@
                         }
                     }
                     .equipment-item{
-                        .wrapper{
-                            display: flex;
-                            justify-content: space-between;
-                        }
-                        .slider{
+                        padding: 40px 0;
+                        .title{
                             width: 48%;
-                            img{
-                                width: 100%;
-                                height: auto;
+                            h3{
+                                font-size: 32px;
                             }
-                            .slick-arrow{
-                                left: 0;
-                                bottom: -10%;
-                                width: 46px;
-                                height: 46px;
-                                cursor: pointer;
-                                position: absolute;
-                                border-radius: 50%;
-                                background: #FFFFFF;
-                                border: 1px solid #E3E8EA;
-                                transition: all 0.3s;
-                                z-index: 100;
-                                &:hover{
-                                    background: #2980B9;
-                                    border: 1px solid #2980B9;
-                                    i{
-                                        color: #ffffff;
+                            span{
+                                font-size: 20px;
+                            }
+                            .subtitle{
+                                p{
+                                    font-size: 18px;
+                                    width: 60%;
+                                }
+                            }
+                        }
+                        .item-wrapper{
+                            .text{
+                                width: 48%;
+                                p{
+                                    font-size: 18px;
+                                    line-height: 26px;
+                                }
+                                a{
+                                    font-size: 18px;
+                                    line-height: 26px;
+                                }
+                                ul{
+                                    li{
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                        padding-left: 26px;
+                                        &:before{
+                                            width: 8px;
+                                            height: 8px;
+                                        }
                                     }
                                 }
-                                i{
-                                    top: 50%;
-                                    left: 50%;
-                                    font-size: 15px;
-                                    color: #2980B9;
-                                    position: absolute;
-                                    transform: translate(-50%, -50%);
+                            }
+                            .slider-wrapper{
+                                margin-top: -120px;
+                                .slider{
+                                    padding-bottom: 0;
+                                    .slick-arrow{
+                                        top: 50%;
+                                        transform: translate(0, -50%);
+                                    }
+                                    .next{
+                                        left: 96%;
+                                    }
+                                    .prev{
+                                        left: -4%;
+                                    }
+                                    .video-play{
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        height: 80px;
+                                        width: 80px;
+                                        i{
+                                            top: 53%;
+                                            left: 53%;
+                                            font-size: 22px;
+                                        }
+                                    }
                                 }
                             }
-                            .slick-disabled{
-                                opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 1400px){
+        .content-wrapper{
+            .content{
+                .tab{
+                    .equipment-item{
+
+                        .title{
+                            h3{
+                                font-size: 40px;
+                                line-height: 48px;
                             }
-                            .prev{
-                                left: 0px;
+                            span{
+                                font-size: 20px;
+                                line-height: 26px;
                             }
-                            .next{
-                                left: 65px;
+                            .subtitle{
+                                p{
+                                    font-size: 20px;
+                                }
                             }
                         }
-                        .text{
-                            width: 48%;
+                        .item-wrapper{
+                            .text{
+                                p{
+                                    font-size: 20px;
+                                    line-height: 28px;
+                                    margin-bottom: 50px;
+                                }
+                                a{
+                                    font-size: 20px;
+                                    line-height: 31px;
+                                    padding: 7px 19px 6px;
+                                }
+                                ul{
+                                    margin-bottom: 50px;
+                                    li{
+                                        font-size: 20px;
+                                        line-height: 28px;
+                                        padding-left: 29px;
+                                        &:before{
+                                            width: 8px;
+                                            height: 8px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        .content-wrapper{
+            .content{
+                .tab{
+                    .equipment-item{
+                        padding: 65px 0;
+                        .title{
+                            h3{
+                                font-size: 48px;
+                                line-height: 56px;
+                            }
+                            span{
+                                font-size: 24px;
+                                line-height: 28px;
+                            }
+                            .subtitle{
+                                p{
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                        .item-wrapper{
+                            .text{
+                                p{
+                                    font-size: 22px;
+                                    line-height: 31px;
+                                    margin-bottom: 50px;
+                                }
+                                a{
+                                    font-size: 22px;
+                                    line-height: 31px;
+                                    padding: 7px 19px 6px;
+                                }
+                                ul{
+                                    margin-bottom: 50px;
+                                    li{
+                                        font-size: 22px;
+                                        line-height: 31px;
+                                        padding-left: 29px;
+                                        &:before{
+                                            width: 9px;
+                                            height: 9px;
+                                        }
+                                    }
+                                }
+                            }
+                            .slider-wrapper{
+                                margin-top: -160px;
+                                .slider{
+                                    .video-play{
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        height: 110px;
+                                        width: 110px;
+                                        i{
+                                            top: 52%;
+                                            left: 55%;
+                                            font-size: 35px;
+                                        }
+                                    }
+                                    .slick-arrow{
+                                        width: 60px;
+                                        height: 60px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -1522,7 +1882,7 @@
         
     }
     @media(min-width:1024px){
-        width: 70%;
+        width: 80%;
         .description{
             margin: 50px 0;
             padding-right: 20%;
@@ -1704,7 +2064,8 @@
         
     }
     .faq-slider{
-        padding-bottom: 70px;
+        margin-bottom: 70px;
+        padding: 0 15px;
         .item{
             border: 1px solid  #E5E9EA;
             padding: 20px;
@@ -1722,7 +2083,7 @@
         }
         .slick-arrow{
             left: 0;
-            bottom: 0;
+            bottom: -68px;
             width: 46px;
             height: 46px;
             cursor: pointer;
@@ -1751,10 +2112,144 @@
             opacity: 0.5;
         }
         .prev{
-            left: 0px;
+            left: 10px;
         }
         .next{
-            left: 65px;
+            left: 70px;
+        }
+    }
+    @media (min-width: 540px) {
+        .title{
+            margin-bottom: 29px;
+        }
+        .faq-slider{
+            padding: 0 42px;
+            .prev {
+                left: 41px;
+            }
+            .next {
+                left: 96px;
+            }
+        }
+    }
+    @media(min-width:1024px){
+        padding: 30px 0;
+        .faq-slider{
+            padding: 0;
+            .slick-list{
+                padding-left: 192px;
+            }
+            .item{
+                h4{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+        }
+        .slick-list{
+            padding-left: 40px;
+        }
+        .slick-arrow{
+            top: 48%;
+            z-index: 4;
+            bottom: initial;
+            transform: translate(0, -50%);
+        }
+        .next {
+            // left: 172px;
+        }
+        .prev {
+            // left: 115px;
+        }
+    }
+    @media(min-width:1200px){
+        .faq-slider{
+            .slick-list {
+                padding-left: 100px;
+            }
+            .slick-arrow{
+                top: 50%;
+            }
+            .prev {
+                left: 22px;
+            }
+            .next {
+                left: 78px;
+            }
+        }
+    }
+    @media(min-width: 1400px){
+        .faq-slider{
+            .item{
+                h4{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+            .slick-arrow {
+                top: 50%;
+            }
+            .next {
+                left: 77px;
+            }
+            .prev {
+                left: 20px;
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        .faq-slider{
+            .slick-list {
+                padding-left: 62px;
+            }
+            .slick-arrow{
+                top: 48.5%;
+                width: 60px;
+                height: 60px;
+                i {
+                    font-size: 20px;
+                }
+            }
+            .next {
+                left: 102px;
+            }
+            .prev {
+                left: 28px;
+            }
+            .item{
+                padding: 46px 50px 46px 43px;
+                h4{
+                    font-size: 22px;
+                    margin-bottom: 29px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 1800px){
+        .faq-slider{
+            .slick-list {
+                padding-left: 130px;
+            }
+            .slick-arrow {
+                top: 50%;
+            }
+            .next {
+                left: 100px;
+            }
+            .prev {
+                left: 24px;
+            }
         }
     }
 }

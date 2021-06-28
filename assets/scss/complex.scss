@@ -1,0 +1,561 @@
+.title{
+    margin-bottom: 30px;
+    h1{
+        margin-top: 0;
+        display: block;
+        font-size: 30px;
+        color: #000000;            
+        line-height: 35px;
+        font-weight: normal;
+        font-family: 'GT Eesti Pro Display Regular';
+    }
+    .subtitle{
+        p{
+            font-size: 14px;
+            line-height: 1.4;
+            color: #0F1728;
+        }
+    }
+    @media(min-width: 540px){
+        margin-right: 30%;
+    }
+    @media(min-width: 1024px){
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: 42px;
+        .subtitle{
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    @media(min-width: 1200px){
+        margin-bottom: 49px;
+        width: 48%;
+        .subtitle{
+            p{
+                font-size: 18px;
+                width: 60%;
+            }
+        }
+    }
+    @media(min-width: 1400px){
+        h1 {
+            font-size: 40px;
+            line-height: 45px;
+        }
+        .subtitle{
+            p{
+                font-size: 20px;
+                
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        margin-left: 4px;
+        margin-bottom: 70px;
+        h1 {
+            font-size: 50px;
+            line-height: 70px;
+        }
+        .subtitle{
+            p{
+                font-size: 22px;
+            }
+        }
+    }
+    @media(min-width: 1800px){
+        margin-bottom: 77px;
+        width: 53%;
+        h1{
+            font-size: 60px;
+        }
+    }
+}
+
+.complex{
+    &-content{
+        .img{
+            img{
+                width: 345px;
+                margin-bottom: 30px;
+            }
+        }
+        .text{
+            p{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #3F3F3F;
+            }
+            .cost{
+                margin: 25px 0;
+                span{
+                    font-size: 18px;
+                    line-height: 1.4;
+                    text-decoration-line: line-through;
+                    color: #81939A;
+                }
+                strong{
+                    font-size: 18px;
+                    line-height: 1.4;
+                    color: #00B6EF;
+                    margin-left: 14px;
+                }
+            }
+            a{
+                font-size: 14px;
+                line-height: 1.4;
+                color: #FFFFFF;
+                background: #00B6EF;
+                border-radius: 91px;
+                padding: 14px 47px 16px 47px;
+                display: inline-block;
+                i{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    @media(min-width: 768px){
+        .complex-content{
+            display: flex;
+            justify-content: space-between;
+            .img{
+                order: 2;
+                padding: 0;
+                
+            }
+            .text{
+                width: 48%;
+            }
+        }
+    }
+    @media(min-width: 1024px){
+        .complex-content{
+            .img{
+                img{
+                    width: 320px;
+                }
+            }
+            .text{
+                width: 45%;
+            }
+        }
+    }
+    @media(min-width:1200px){
+        .complex-content{
+            .img{
+                margin-top: -120px;
+                img{
+                    width: 500px;
+                }
+            }
+            .text{
+                p, a{
+                    font-size: 16px;
+                }
+                .cost{
+                    span, strong{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width:1400px){
+        .complex-content{
+            .img{
+                
+                img{
+                    width: 620px;
+                }
+            }
+            .text{
+                p, a{
+                    font-size: 18px;
+                }
+                a{
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+    @media(min-width:1600px){
+        .complex-content{
+            .img{
+                width: 50%;
+                margin-top: -195px;
+                img{
+                    width: 100%;
+                }
+            }
+            .text{
+                width: 48%;
+                p, a{
+                    font-size: 22px;
+                }
+                a{
+                    margin-top: 70px;
+                }
+                .cost{
+                    span, strong{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-complex{
+    .tab{
+        display: none;
+    }
+    .active-tab{
+        display: block;
+    }
+    .about-complex-title{
+        padding-bottom: 35px;
+        h2{
+            font-size: 24px;
+            line-height: 28px;
+            color: #0F1728;
+        }
+    }
+    .about-complex-content{
+        .tabs{
+            display: flex;
+            overflow: scroll;
+            margin-right: -15px;
+            white-space: nowrap;
+            margin-bottom: 30px;
+            padding-right: 15px;
+            li{
+                margin-right: 41px;
+                &:last-child{
+                    margin-right: 0;
+                    padding-right: 15px;
+                }
+                a{
+                    font-size: 16px;
+                    color: #293842;
+                    line-height: 20px;
+                    position: relative;
+                    padding-bottom: 5px;
+                    display: inline-block;
+                    font-family: 'GT Eesti Pro Display Regular';
+                    &:hover{
+                        color: #00B6EF;
+                    }
+                    &::after{
+                        content: '';
+                        left: 0;
+                        width: 0;
+                        bottom: 0;
+                        height: 2px;
+                        position: absolute;
+                        background: #00B6EF;
+                        transition: all 0.4s;
+                    }
+                }
+            }
+            li.active{
+                a{
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .text{
+            color: #0F1728;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            p{
+                margin-bottom: 15px;
+            }
+            h5{
+                font-size: 16px;
+                color: #0F1728;
+                line-height: 19px;
+            }
+            ul{
+                li{
+                    margin-top: 15px;
+                    text-indent: 18px;
+                    position: relative;
+                    &:after{
+                        width: 6px;
+                        height: 6px;
+                        background-color: #00B6EF;
+                        position: absolute;
+                        left: 0px;
+                        top: 6px;
+                        border-radius: 50%;
+                        content:'';
+                    }
+                }
+            }
+
+        }
+        .showmore-button{
+            font-size: 14px;
+            line-height: 20px;
+            color: #00B6EF;
+            border-bottom: 1px dotted #00B6EF;
+            display: inline-block;
+            font-weight: 400;
+            margin-top: 15px;
+        }
+        .slick-arrow{
+            margin-top: 20px;
+            left: 0;
+            top:100%;
+            width: 46px;
+            height: 46px;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 50%;
+            background: #FFFFFF;
+            border: 1px solid #E3E8EA;
+            transition: all 0.3s;
+            &:hover{
+                background: #2980B9;
+                border: 1px solid #2980B9;
+                i{
+                    color: #ffffff;
+                }
+            }
+            i{
+                top: 50%;
+                left: 50%;
+                font-size: 15px;
+                color: #2980B9;
+                position: absolute;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .slick-disabled{
+            opacity: 0.5;
+        }
+        .prev{
+            left: 0px;
+        }
+        .next{
+            left: 65px;
+        }
+        .slick-slider{
+            margin-bottom: 50px;
+        }
+        .diplomas-slider{
+            img{
+                height: 156px;
+                margin-right: 13px;
+            }
+        }
+        .schedule-slider{
+            .item{
+                padding: 16px 21px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 128px;
+                border: 1px solid #E5E9EA;
+                .date{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 18px;
+                    color: #81949A;
+                }
+                .time{
+                    width: 75%;
+                    span{
+                        color: #81949A;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .active-item{
+                border: 1px solid #00B6EF;
+                .date{
+                    color: #0F1728;
+                }
+                .time{
+                    span{
+                        a{
+                            background: rgba(0, 182, 239, 0.13);
+                            margin: 3px 2px;
+                            color: #00B6EF;
+                            display: inline-block;
+                            padding: 2px 5px;
+                            border-radius: 10.5px;
+                            font-size: 14px;
+                            font-family: 'GT Eesti Pro Display Regular';
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width:540px){
+        .about-complex-content{
+            .tabs {
+                margin-right: 0;
+                padding-right: 0;
+                li {
+                    margin-right: 30px;
+                    &:last-child{
+                        padding-right: 0;
+                    }
+                }
+            }
+            .diplomas-slider{
+                img{
+                    height: 210px;
+                    margin-right: 13px;
+                }
+            }
+        }
+    }
+    @media(min-width:1024px){
+        .about-complex-title{
+            h2{
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+        .about-complex-content{
+            .tabs{
+                overflow: auto;
+            }
+            .diplomas-slider{
+                img{
+                    height: auto;
+                }
+            }
+            .schedule-slider{
+                .next{
+                    left: unset;
+                    right: -50px
+                }
+                .prev{
+                    left: -50px;
+                }
+            }
+            .slick-arrow{
+                top: 49%;
+                z-index: 4;
+                margin: 0;
+                transform: translate(0, -50%);
+            }
+            .next {
+                left: 96%;
+            }
+            .prev {
+                left: -4%;
+            }
+        }
+    }
+    @media(min-width:1200px){
+       .about-complex-title{
+           h2{
+               font-size: 33px;
+           }
+       } 
+        .about-complex-content{
+            .tabs {
+                
+                li {
+                    a {
+                        font-size: 16px;
+                        line-height: 28px;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+            
+        }
+    }
+    @media(min-width: 1400px){
+        .about-complex-title{
+            h2{
+                font-size: 33px;
+            }
+        } 
+        .about-complex-content{
+            .tabs {
+                margin-bottom: 60px;
+                li {
+                    margin-right: 40px;
+                    a {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .text{
+                font-size: 18px;
+                line-height: 26px;
+            }
+            .schedule-slider{
+                .item{
+                    .time{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        .about-complex-content{
+            .slick-arrow{
+                top: 50%;
+                width: 60px;
+                height: 60px;
+                i {
+                    font-size: 20px;
+                }
+            }
+            .schedule-slider{
+                width: 90%;
+                margin: 0 auto;
+                .next{
+                    right: -65px;
+                }
+                .prev{
+                    left: -65px;
+                }
+            }
+            // .next {
+            //     left: 102px;
+            // }
+            // .prev {
+            //     left: 28px;
+            // }
+        }
+    }
+    @media(min-width: 1800px){
+        .about-complex-title{
+            h2{
+                font-size: 33px;
+            }
+        } 
+        .about-complex-content{
+            .tabs {
+                li {
+                    margin-right: 60px;
+                    a {
+                        font-size: 22px;
+                        line-height: 44px;
+                    }
+                }
+            }
+            .text{
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+    }
+}
