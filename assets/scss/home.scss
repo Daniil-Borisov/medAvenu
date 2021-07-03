@@ -2012,6 +2012,36 @@
         }
     }
     .promotions-content{
+        .red-bg{
+            background-color: #D8554E;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #D8554E;
+                    }
+                }
+            } 
+        }
+        .sky-blue-bg{
+            background-color: #00b7ef;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #00b7ef;
+                    }
+                }
+            }
+        }
+        .blue-bg{
+            background-color: #15518f;
+            .img-with-text{
+                .description{
+                    span{
+                        color: #15518f;
+                    }
+                }
+            }
+        }
         .promotions-item{
             position: relative;
             margin-bottom: 29px;
@@ -2022,6 +2052,9 @@
                     }
                 }
             }
+            &:nth-of-type(n+4){
+                display: none;
+            }
             a{
                 top: 0;
                 left: 0;
@@ -2029,6 +2062,13 @@
                 width: 100%;
                 height: 100%;
                 position: absolute;
+            }
+            .logo{
+                position: absolute;
+                top: 18px;
+                right: 18px;
+                width: 60px;
+                z-index: 10;
             }
             .img{
                 position: relative;
@@ -2061,16 +2101,56 @@
                         background: #FFFFFF;
                         padding: 4px 12px 2px 8px;
                         i{
-                            font-size: 14px;
+                            font-size: 10px;
                             color: #81939A;
-                            margin-right: 7px;
+                            margin-right: 5px;
                             display: inline-block;
                         }
                     }
                 }
                 img{
-                    width: 100%;
+                    width: 67%;
                     display: flex;
+                    padding: 50px 0 0 20px;
+                }
+                .img-with-text{
+                    position: relative;
+                    .description{
+                        span{
+                            font-size: 16px;
+                            width: 70px;
+                            height: 70px;
+                            background-color: #FFFFFF;
+                            border-radius: 50%;
+                            font-family: 'GT Eesti Pro Display Regular';
+                            display: flex;  
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 32%;
+                            left: 58%;
+                            &::after{
+                                width:120px;
+                                height: 120px;
+                                border: 1px solid #fff;
+                                border-radius: 50%;
+                                content: '';
+                                display: inline-block;
+                                position: absolute;
+                                opacity: 0.3;
+                            }
+
+                        }
+                        p{
+                            position: absolute;
+                            color: #FFFFFF;
+                            width: 49%;
+                            top: 76%;
+                            left: 55%;
+                            font-family: 'GT Eesti Pro Display Regular';
+                            line-height: 22px;
+                        }
+                    }
                 }
             }
             .text{
@@ -2271,6 +2351,7 @@
                             }
                         }
                     }
+                    
                 }
                 .text{
                     h4 {
@@ -2318,11 +2399,36 @@
         }
         .promotions-content {
             .promotions-item {
+                margin-bottom: 73px;
                 .img {
                     margin-bottom: 29px;
                     .discount-timer {
                         top: 20px;
                         left: 25px;
+                    }
+                    .img-with-text{
+                        img{
+                            width: 350px;
+                            padding:93px 0 0 30px
+                        }
+                        .description{
+                            span{
+                                left: 55%;
+                                width: 100px;
+                                height: 100px;
+                                font-size: 24px;
+                                &::after{
+                                    width: 174px;
+                                    height: 174px;
+                                }
+                            }
+                            p{
+                                font-size: 24px;
+                                line-height: 34px;
+                                width: 45%;
+                                top: 70%;
+                            }
+                        }
                     }
                 }
                 .text {
@@ -2536,6 +2642,350 @@
         }
         .text {
             width: 66%;
+        }
+    }
+}
+
+.insurance{
+    padding: 0 15px;
+    .title{
+        margin-bottom: 28px;
+        h2{
+            display: block;
+            font-size: 30px;
+            color: #000000;            
+            line-height: 35px;
+            font-weight: normal;
+            margin-bottom: 38px;
+            font-family: 'GT Eesti Pro Display Regular';
+            span{
+                display: block;
+                font-size: 14px;
+                color: #3F3F3F;
+                margin-top: 12px;
+                line-height: 20px;
+                font-family: 'GT Eesti Pro Display Light';
+            }
+        }
+        .appraisal{
+            display: flex;
+            margin-left: -2px;
+            align-items: center;
+            .appraisal-item{
+                margin-right: 18px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                img{
+                    width: auto;
+                    height: 30px;
+                    display: flex;
+                    max-width: initial;
+                    margin-bottom: 10px;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                }
+                .rating{
+                    display: flex;
+                    align-items: center;
+                    ul{
+                        display: flex;
+                        margin-right: 5px;
+                        align-items: center;
+                        li{
+                            display: flex;
+                            margin-right: 3px;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                            i{
+                                font-size: 8px;
+                                color: #F9DA78;
+                            }
+                        }
+                    }
+                    span{
+                        font-size: 11px;
+                        color: #6F8086;
+                        line-height: 11px;
+                    }
+                }
+            }
+        }
+    }
+    .insurance-content{
+        .insurance-slider{
+            padding-bottom: 80px;   
+        }
+        .item{
+            border: 1px solid #E5E9EA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 29px;
+            transition: all 0.3s;
+            &:hover{
+                border: 1px solid #00B6EF;
+            }
+        }
+        .slick-arrow{
+            left: 0;
+            bottom: 0;
+            width: 46px;
+            height: 46px;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 50%;
+            background: #FFFFFF;
+            border: 1px solid #E3E8EA;
+            transition: all 0.3s;
+            &:hover{
+                background: #2980B9;
+                border: 1px solid #2980B9;
+                i{
+                    color: #ffffff;
+                }
+            }
+            i{
+                top: 50%;
+                left: 50%;
+                font-size: 15px;
+                color: #2980B9;
+                position: absolute;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .slick-disabled{
+            opacity: 0.5;
+        }
+        .prev{
+            left: 0;
+        }
+        .next{
+            left: 56px;
+        }
+    }
+    @media (min-width: 540px) {
+        .title{
+            h2{
+                margin-bottom: 36px;
+            }
+            .appraisal {
+                .appraisal-item {
+                    img {
+                        height: 31px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+    @media (min-width: 768px){
+        
+    }
+    @media (min-width: 1024px) {
+        padding: 45px 0;
+        .title {
+            display: flex;
+            margin-bottom: 40px;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                width: 40%;
+                margin-bottom: 0;
+            }
+            .appraisal{
+                width: 58%;
+                margin-top: 8px;
+                justify-content: flex-end;
+                .appraisal-item {
+                    margin-right: 13px;
+                    text-align: center;
+                    .rating {
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+        .insurance-content{
+            padding: 0;
+            .insurance-slider{
+                padding: 0;
+            }
+            .slick-list{
+                padding-left: 192px;
+            }
+            .slick-arrow{
+                top: 48%;
+                z-index: 4;
+                bottom: initial;
+                transform: translate(0, -50%);
+            }
+            .next {
+                left: 172px;
+            }
+            .prev {
+                left: 115px;
+            }
+        }
+        
+        
+    }
+    @media (min-width: 1200px) {
+        padding: 34px 0 35px;
+        .title {
+            margin-bottom: 45px;
+            padding-right: 162px;
+            h2{
+                width: 35%;
+            }
+            .appraisal {
+                width: 60%;
+                margin-top: 12px;
+                .appraisal-item {
+                    margin-right: 42px;
+                }
+            }
+        }
+        .insurance-content{
+            .slick-list {
+                padding-left: 100px;
+            }
+            .item{
+                padding: 50px;
+            }
+            .slick-arrow{
+                top: 50%;
+            }
+            .prev {
+                left: 22px;
+            }
+            .next {
+                left: 78px;
+            }
+        }
+        
+    }
+    @media (min-width: 1400px) {
+        padding: 51px 0;
+        .title {
+            margin-bottom: 42px;
+            padding-right: 207px;
+            h2 {
+                font-size: 40px;
+                line-height: 45px;
+                span {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+            }
+            .appraisal {
+                margin-top: -12px;
+            }
+        }
+        .insurance-content{
+            .slick-arrow {
+                top: 50%;
+            }
+            .next {
+                left: 77px;
+            }
+            .prev {
+                left: 20px;
+            } 
+            .item{
+                padding: 60px;
+            }
+        }
+       
+    }
+    @media (min-width: 1600px) {
+        padding: 70px 0 80px;
+        .title {
+            margin-left: 4px;
+            margin-bottom: 80px;
+            padding-right: 278px;
+            h2 {
+                width: 40%;
+                font-size: 60px;
+                line-height: 70px;
+                span {
+                    font-size: 22px;
+                    margin-top: 22px;
+                    line-height: 30px;
+                }
+            }
+            .appraisal{
+                margin-top: 24px;
+                .appraisal-item {
+                    margin-right: 42px;
+                    img {
+                        height: 50px;
+                        margin-bottom: 0;
+                    }
+                    .rating {
+                        ul{
+                            margin-right: 10px;
+                            li {
+                                i {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                        span {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .insurance-content{
+            .slick-list {
+                padding-left: 62px;
+            }
+            .slick-arrow{
+                top: 48.5%;
+                width: 60px;
+                height: 60px;
+                i {
+                    font-size: 20px;
+                }
+            }
+            .next {
+                left: 102px;
+            }
+            .prev {
+                left: 28px;
+            }
+            .item{
+                padding: 70px;
+            }
+        }
+        
+    }
+    @media (min-width: 1800px) {
+        padding: 70px 0 90px;
+        .title {
+            margin-bottom: 80px;
+            .appraisal {
+                margin-top: 28px;
+            }
+        }
+        .insurance-content{
+            .slick-list {
+                padding-left: 130px;
+            }
+            .slick-arrow {
+                top: 50%;
+            }
+            .next {
+                left: 100px;
+            }
+            .prev {
+                left: 24px;
+            }
         }
     }
 }
@@ -3595,4 +4045,139 @@
             padding: 106px 50px 0;
         }
     }
+}
+
+.legal{
+    padding: 20px 15px 25px;
+    .title{
+        margin-bottom: 30px;
+        h2{
+            margin-top: 0;
+            display: block;
+            font-size: 30px;
+            color: #000000;            
+            line-height: 35px;
+            font-weight: normal;
+            margin-bottom: 38px;
+            font-family: 'GT Eesti Pro Display Regular';
+        }
+        p{
+            display: block;
+            font-size: 14px;
+            color: #3F3F3F;
+            line-height: 20px;
+            font-family: 'GT Eesti Pro Display Light';
+        }
+    }
+    .slider{
+        padding-bottom: 80px;  
+        .slick-arrow{
+            left: 0;
+            bottom: 0;
+            width: 46px;
+            height: 46px;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 50%;
+            background: #FFFFFF;
+            border: 1px solid #E3E8EA;
+            transition: all 0.3s;
+            z-index: 10;
+            &:hover{
+                background: #2980B9;
+                border: 1px solid #2980B9;
+                i{
+                    color: #ffffff;
+                }
+            }
+            i{
+                top: 50%;
+                left: 50%;
+                font-size: 15px;
+                color: #2980B9;
+                position: absolute;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .slick-disabled{
+            opacity: 0.5;
+        }
+        .prev{
+            left: 0;
+        }
+        .next{
+            left: 56px;
+        }
+    }
+
+    @media(min-width:1024px){
+        .slider{
+            padding: 0;
+            .slick-list{
+                padding-left: 192px;
+            }
+            .slick-arrow{
+                top: 85%;
+                z-index: 4;
+                bottom: initial;
+                transform: translate(0, -50%);
+            }
+            .next {
+                left: 172px;
+            }
+            .prev {
+                left: 115px;
+            }
+        }
+    }
+    @media(min-width:1200px){
+        display: flex;
+        .title{
+            width: 48%;
+        }
+        .slider{
+            width: 50%;
+            .slick-list{
+                padding: 0;
+            }
+            .next {
+                left: 0px
+            }
+            .prev {
+                left: -60px;
+            }
+        } 
+    }
+    @media(min-width:1400px){
+        .title{
+            margin-bottom: 42px;
+            h2 {
+                font-size: 40px;
+                line-height: 45px;
+                
+            }
+            p {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+        }
+    }
+    @media(min-width:1600px){
+        padding: 70px 0 80px;
+        .title{
+            margin-bottom: 42px;
+            h2 {
+                font-size: 60px;
+                line-height: 70px;
+                margin-bottom: 80px;
+                
+            }
+            p {
+                font-size: 22px;
+                    margin-top: 22px;
+                    line-height: 30px;
+            }
+        }
+    }
+    @media(min-width:1800px){}
 }
