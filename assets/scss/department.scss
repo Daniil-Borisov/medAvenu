@@ -476,6 +476,7 @@
     }
     @media(min-width: 1024px){
         .subdepartment{
+
             .items{
                 display: flex;
                 a{
@@ -486,6 +487,13 @@
         }
     }
     @media(min-width: 1200px){
+        .title{
+            margin-bottom: 25px;
+            h2{
+                font-size: 30px;
+                line-height: 38px;          
+            }
+        }
         .tabs {
             margin-bottom: 0;
             li {
@@ -497,14 +505,27 @@
             }
         }
         .subdepartment{
+            h3{
+                font-size: 20px;
+                margin: 40px 0 20px;
+            }
             .items{
+                
                 a{
                     width: 25%;
+                    font-size: 18px;
                 }
             }
         }
     }
     @media(min-width:1400px){
+        .title{
+            margin-top: 50px;
+            h2{
+                font-size: 38px;
+                line-height: 46px;          
+            }
+        }
         .tabs {
             li {
                 margin-right: 40px;
@@ -514,12 +535,51 @@
                 }
             }
         }
+        .subdepartment{
+            h3{
+                font-size: 24px;
+
+            }
+            .items{
+                a{
+                    
+                    font-size: 20px;
+                }
+            }
+            
+        }
     }
     @media(min-width:1600px){
-        
+        .title{
+            margin-bottom: 30px;
+            margin-top: 90px;
+            h2{
+                font-size: 42px;
+                line-height: 50px;          
+            }
+        }
+        .subdepartment{
+            h3{
+                font-size: 30px;
+                margin: 60px 0 30px;
+            }
+            .items{
+                a{
+                    
+                    font-size: 22px;
+                }
+            }
+            
+        }
     }
 
     @media(min-width:1800px){
+        .title{
+            h2{
+                font-size: 48px;
+                line-height: 56px;          
+            }
+        }
         .tabs {
             li {
                 margin-right: 60px;
@@ -1183,7 +1243,7 @@
                 .text{
                     p{
                         font-size: 14px;
-                        line-height: 20px;
+                        line-height: 1.4;
                         font-weight: 300;
                         color: #3f3f3f;
                     }
@@ -1551,6 +1611,13 @@
             }
             .content{
                 width: 70%;
+                .title{
+                    margin-bottom: 25px;
+                    h2{
+                        font-size: 30px;
+                        line-height: 38px;          
+                    }
+                }
                 .tabs {
                     li {
                         margin-right: 40px;
@@ -1644,7 +1711,19 @@
     @media(min-width: 1400px){
         .content-wrapper{
             .content{
+                .title{
+                    margin-top: 50px;
+                    h2{
+                        font-size: 38px;
+                        line-height: 46px;          
+                    }
+                }
                 .tab{
+                    .text{
+                        p{
+                            font-size: 18px;
+                        }
+                    }
                     .equipment-item{
 
                         .title{
@@ -1696,7 +1775,21 @@
     @media(min-width: 1600px){
         .content-wrapper{
             .content{
+                .title{
+                    margin-bottom: 30px;
+                    margin-top: 90px;
+                    h2{
+                        font-size: 42px;
+                        line-height: 50px;          
+                    }
+                }
                 .tab{
+                    .text{
+                        p{
+                            font-size: 22px;
+                            margin-bottom: 20px;
+                        }
+                    }
                     .equipment-item{
                         padding: 65px 0;
                         .title{
@@ -1769,6 +1862,11 @@
     @media(min-width: 1800px){
         .content-wrapper{
             .content{
+                .title{
+                    h2{
+                        font-size: 48px;
+                    }
+                }
                 .tabs {
                     li {
                         margin-right: 60px;

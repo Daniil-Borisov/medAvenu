@@ -183,6 +183,64 @@ $(function(){
         $('.schedule-slider').slick('setPosition');
     });
 
+    if($(window).width() >= 1024){
+      $('.reviews-content').slick({
+        rows: 1,
+        infinite: false,
+        slidesToScroll: 1,
+        slidesToShow: 3.2,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-slick-next"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-slick-prev"></i></button>',
+        responsive: [
+            {
+                breakpoint: 1800,
+                settings: {
+                    rows: 1,
+                    slidesToShow: 3.2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 3.65,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3.4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                }
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                rows: 2,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+        ]
+    });
+    }
+
     if($(window).width() >= 1200){
         $('.publication-content').slick({
             rows: 1,

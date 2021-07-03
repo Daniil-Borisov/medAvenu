@@ -161,10 +161,10 @@
             </div>
             <div class="icons">
               <!-- вставить иконки соц сетей -->
-              <a href="javascript:void(0)" class="social"><i class="icon-stock"></i></a>
-              <a href="javascript:void(0)" class="social"><i class="icon-stock"></i></a>
-              <a href="javascript:void(0)" class="social"><i class="icon-stock"></i></a>
-              <a href="javascript:void(0)" class="social"><i class="icon-stock"></i></a>
+              <a href="javascript:void(0)" class="social"><i class="icon-facebook"></i></a>
+              <a href="javascript:void(0)" class="social"><i class="icon-instagram"></i></a>
+              <a href="javascript:void(0)" class="social"><i class="icon-youtube"></i></a>
+              <a href="javascript:void(0)" class="social"><i class="icon-vk"></i></a>
               <!--  -->
             </div>
           </div>
@@ -180,13 +180,13 @@
       </div>
       <div class="about-doctor-content">
         <ul class="tabs">
-          <li class="active"><a href="javascript:void(0)">Основное</a></li>
-          <li><a href="javascript:void(0)">Образование</a></li>
-          <li><a href="javascript:void(0)">Опыт работы</a></li>
-          <li><a href="javascript:void(0)">Дипломы </a></li>
-          <li><a href="javascript:void(0)">Расписание</a></li>
+          <li data-tab="tab1" class="active"><a href="javascript:void(0)">Основное</a></li>
+          <li data-tab="tab2"><a href="javascript:void(0)">Образование</a></li>
+          <li data-tab="tab3"><a href="javascript:void(0)">Опыт работы</a></li>
+          <li data-tab="tab4"><a href="javascript:void(0)">Дипломы </a></li>
+          <li data-tab="tab5"><a href="javascript:void(0)">Расписание</a></li>
         </ul>
-        <div class="tab active-tab" id="main">
+        <div class="tab tab1 active-tab" id="main">
           <div class="text">
             <p>К.м.н., доцент кафедры кардиологии и внутренних болезней учреждения образования «Белорусский государственный медицинский университет». </p>
             <p>Врач высшей квалификационной категории по терапии.</p>
@@ -199,7 +199,7 @@
             </ul>
           </div>
         </div>
-        <div class="tab" id="education">
+        <div class="tab tab2" id="education">
           <div class="text">
             <p>К.м.н., доцент кафедры кардиологии и внутренних болезней учреждения образования «Белорусский государственный медицинский университет». </p>
             <p>Врач высшей квалификационной категории по терапии.</p>
@@ -212,7 +212,7 @@
             </ul>
           </div>
         </div>
-        <div class="tab " id="experiance">
+        <div class="tab tab3" id="experiance">
           <div class="text">
             <p>К.м.н., доцент кафедры кардиологии и внутренних болезней учреждения образования «Белорусский государственный медицинский университет». </p>
             <p>Врач высшей квалификационной категории по терапии.</p>
@@ -225,7 +225,7 @@
             </ul>
           </div>
         </div>
-        <div class="tab active-tab" id="diplomas">
+        <div class="tab tab4" id="diplomas">
           <div class="diplomas-slider">
             <div class="item">
               <a href="img/diplom1.png" data-fancybox="diplomas">
@@ -254,16 +254,115 @@
             </div>          
           </div>
         </div>
-        <div class="tab " id="schedule">
-          <p>К.м.н., доцент кафедры кардиологии и внутренних болезней учреждения образования «Белорусский государственный медицинский университет». </p>
-          <p>Врач высшей квалификационной категории по терапии.</p>
-          <p>В 2013 г. защитил кандидатскую диссертацию «Острый крупноочаговый инфаркт миокарда, осложненный развитием инфаркта мозга: клинико-инструментальная диагностика и патогенетическая терапия вазоцеребральных ишемических осложнений» по специальности 14.01.05 – кардиология.</p>
-          <p>Член общественного объединения «Белорусская ассоциация врачей». Автор 52 печатных работ, 2-х инструкций по применению.</p>
-          <h5>Научные интересы</h5>
-          <ul>
-            <li>Особенности диагностики, профилактики и лечения пациентов с сочетанием кардиальной и цереброваскулярной патологии.</li>
-            <li>Кардиоваскулярный риск у пациентов при некардиальных хирургических вмешательствах.</li>
-          </ul>
+        <div class="tab tab5" id="schedule">
+          <div class="schedule-slider">
+            <div class="slider-item">
+              <div class="item active-item">
+                <div class="date">
+                  <span>пн</span>
+                  <span>03.05</span>
+                </div>
+                <div class="time">
+                  <span><a href="javascript:void(0)">13:10</a></span>
+                  <span><a href="javascript:void(0)">15:10</a></span>
+                  <span><a href="javascript:void(0)">17:10</a></span>
+                  <span><a href="javascript:void(0)">19:10</a></span>
+                  <span><a href="javascript:void(0)">19:10</a></span>
+                  <span><a href="javascript:void(0)">13:10</a></span>
+                  <span><a href="javascript:void(0)">15:10</a></span>
+                  <span><a href="javascript:void(0)">17:10</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item active-item">
+                <div class="date">
+                  <span>пн</span>
+                  <span>03.05</span>
+                </div>
+                <div class="time">
+                  <span><a href="javascript:void(0)">13:10</a></span>
+                  <span><a href="javascript:void(0)">15:10</a></span>
+                  <span><a href="javascript:void(0)">17:10</a></span>
+                  <span><a href="javascript:void(0)">19:10</a></span>
+                  <span><a href="javascript:void(0)">19:10</a></span>
+                  <span><a href="javascript:void(0)">13:10</a></span>
+                  <span><a href="javascript:void(0)">15:10</a></span>
+                  <span><a href="javascript:void(0)">17:10</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item">
+                <div class="date">
+                  <span>пн</span>
+                  <span>03.05</span>
+                </div>
+                <div class="time">
+                  <span>Нет свободных приемов</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item">
+                <div class="date">
+                  <span>пн</span>
+                  <span>03.05</span>
+                </div>
+                <div class="time">
+                  <span>Нет свободных приемов</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item active-item">
+                <div class="date">
+                  <span>пн</span>
+                  <span>03.05</span>
+                </div>
+                <div class="time">
+                  <span><a href="javascript:void(0)">13:10</a></span>
+                  <span><a href="javascript:void(0)">15:10</a></span>
+                  <span><a href="javascript:void(0)">17:10</a></span>
+                  <span><a href="javascript:void(0)">19:10</a></span>
+                  <span><a href="javascript:void(0)">19:10</a></span>
+                  <span><a href="javascript:void(0)">13:10</a></span>
+                  <span><a href="javascript:void(0)">15:10</a></span>
+                  <span><a href="javascript:void(0)">17:10</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item">
+                <div class="date">
+                  <span>пн</span>
+                  <span>03.05</span>
+                </div>
+                <div class="time">
+                  <span>Нет свободных приемов</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item active-item">
+                <div class="date">
+                  <span>пн</span>
+                  <span>03.05</span>
+                </div>
+                <div class="time">
+                  <span><a href="javascript:void(0)">13:10</a></span>
+                  <span><a href="javascript:void(0)">15:10</a></span>
+                  <span><a href="javascript:void(0)">17:10</a></span>
+                  <span><a href="javascript:void(0)">19:10</a></span>
+                  <span><a href="javascript:void(0)">19:10</a></span>
+                  <span><a href="javascript:void(0)">13:10</a></span>
+                  <span><a href="javascript:void(0)">15:10</a></span>
+                  <span><a href="javascript:void(0)">17:10</a></span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
         </div>
 
       </div>
@@ -603,7 +702,135 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container">
+        <div class="tel-map">
+            <div class="tel">
+                <div class="number">
+                    <i class="icon-tel"></i>
+                    <p>7757 (А1, МТС)</p>
+                </div>
+                <a href="javascript:void(0)">
+                    <i class="icon-drop"></i>
+                </a>
+            </div>
+            <div class="map">
+                <div class="item">
+                    <i class="icon-map"></i>
+                    <strong>Минск</strong>
+                    <span>Грибоедова 11</span>
+                </div>
+                <div class="item">
+                    <i class="icon-map"></i>
+                    <strong>Минск</strong>
+                    <span>Грибоедова 11</span>
+                </div>
+                <div class="item">
+                    <i class="icon-map"></i>
+                    <strong>Минск</strong>
+                    <span>Грибоедова 11</span>
+                </div>
+            </div>
+        </div>
+        <div class="icons-social">
+            <div class="icons-one">
+                <span>Медавеню в социальных сетях:</span>
+                <a href="javascript:void(0)" class="social"><i class="icon-facebook"></i></a>
+                <a href="javascript:void(0)" class="social"><i class="icon-instagram"></i></a>
+                <a href="javascript:void(0)" class="social"><i class="icon-youtube"></i></a>
+                <a href="javascript:void(0)" class="social"><i class="icon-vk"></i></a>
+            </div>
+            <div class="icons-messenger">
+                <span>Мы отвечаем в мессенджерах:</span>
+                <a href="javascript:void(0)" class="social"><i class="icon-facebook"></i></a>
+                <a href="javascript:void(0)" class="social"><i class="icon-instagram"></i></a>
+                <a href="javascript:void(0)" class="social"><i class="icon-youtube"></i></a>
+                <a href="javascript:void(0)" class="social"><i class="icon-vk"></i></a>
+            </div>
+        </div>
+        <div class="logo">
+            <img class="mob" src="img/logo-footer.png" alt="">
+            <img class="desktop" src="img/footer-logo-full.png" alt="">
+            <span>18+</span>
+            <div class="text">
+                <p>© ООО «МЕДАВЕНЮ» УНП 192415181</p>
+                <a href="javascript:void(0)">Лицензия № М-8163</a>
+            </div>
+            <div class="rating-centre">
+                <div class="rating">
+                    <ul>
+                      <li><i class="icon-stock2"></i></li>
+                      <li><i class="icon-stock2"></i></li>
+                      <li><i class="icon-stock2"></i></li>
+                      <li><i class="icon-stock2"></i></li>
+                      <li><i class="icon-stock2"></i></li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <p>Оценка Медицинского центра «МедАвеню» 4.3 на основе отзывов от 78 клиентов.</p>
+                    <a href="javascript:void(0)">Пожаловаться директору</a>
+                </div>
+            </div>
+            <a class="ministry" href="javascript:void(0)">
+                <img src="img/minzdrav.png" alt="">
+            </a>
+        </div>
+        
+        <div class="footer-tagline">
+            <p>ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</p>
+        </div>
+        <div class="footer-text">
+            <p>Медицинские услуги, лекарственные средства, в том числе методы лечения, медицинская техника имеют противопоказания к их применению и использованию. Существует также необходимость ознакомления с инструкцией по их применению и получения консультации специалиста. Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой.</p>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-link-with-text">
+                <div class="footer-link">
+                    <a href="javascript:void(0)"><span>Политика конфиденциальности</span></a>
+                    <span>|</span>
+                    <a href="javascript:void(0)"><span> Пользовательское соглашение</span></a>
+                    <span>|</span>
+                    <a href="javascript:void(0)"><span>Правовая информация</span></a>
+                </div>
+                <div class="footer-text">
+                    <p>Права на контент, тексты и изображения защищены. Копирование материалов запрещено. DMCA.com Protection Status</p>
+                </div>
+            </div>
+            <div class="footer-links-icon">
+                <div class="item">
+                    <div class="text">
+                        <p>Скачайте наше приложение:</p>
+                    </div>
+                    <div class="link-icons">
+                        <a href="javascript:void(0)"><img src="img/android-icon.svg" alt=""></a>
+                        <a href="javascript:void(0)"><img src="img/apple-icon.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <p>Оплата на сайте:</p>
+                        <a href="javascript:void(0)"><p>больше об оплате</p></a>
+                    </div>
+                    <div class="link-icons">
+                        <a href="javascript:void(0)"><img src="img/mastercard-icon.svg" alt=""></a>
+                        <a href="javascript:void(0)"><img src="img/visa-icon.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <p>Создание сайта и интернет-маркетинг -  </p>
+                    </div>
+                    <div class="link-icons">
+                        <a href="javascript:void(0)"><img src="img/octopance-icon.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+</footer>
+
 
   <!-- Скрипты -->
   <script src="js/jquery-3.4.1.min.js"></script>
